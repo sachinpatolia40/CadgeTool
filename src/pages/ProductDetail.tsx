@@ -41,6 +41,7 @@ export default function ProductDetail() {
               <div className="space-y-2 text-gray-600">
                 <p>Series: 6757 - Code: 12.7</p>
                 <p>EDP: 906757012700</p>
+                <p>{id}</p>
               </div>
             </div>
 
