@@ -17,3 +17,18 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.input-style {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200;
+}
+
+
+.rounded-button{
+  background: #fff;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 4px rgba(28, 28, 28, .06);
+    border-radius: 40px;
+    padding: 8px 16px 8px 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+}

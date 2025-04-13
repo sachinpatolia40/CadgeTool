@@ -16,3 +16,9 @@ export interface Certification {
   description: string;
   image: string;
 }
+
+export interface ContactInfo{
+  email:string,
+  phone:string,
+  address:string
+}

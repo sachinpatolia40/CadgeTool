@@ -1,5 +1,5 @@
-import { FaCheck } from 'react-icons/fa';
-
+import { FaCheck,FaDownload  } from 'react-icons/fa';
+import {Link} from "react-router-dom"
 export default function Services() {
   const services = [
     {
@@ -153,7 +153,17 @@ export default function Services() {
           </div>
         </div>
       </div>
-
+      <div className='text-center py-6'>
+        <h2 className='text-3xl font-bold mb-4'>Download Our Catalog</h2>
+        <p className='text-gray-400'>Get detailed information about our products and specifications</p>
+        <div className='flex justify-center mt-9'>
+          <div className='bg-white shadow-lg rounded p-4 mb-6'>
+            <h2 className='px-8 font-bold'>Complete Product Catelog</h2>
+            <p className=' mb-4'>PDF  15.2 MB </p>
+            <a className='inline-flex gap-2' href='../public/Catalog/Catalog.pdf' download="CadgeTool Catalog " style={{'color':" rgb(111 158 229)"}}><FaDownload className='mt-1'/> <b>Download Now</b></a>
+          </div>
+        </div>
+      </div>
       {/* CTA Section */}
       <div className="bg-primary py-16">
         <div className="container mx-auto px-4 text-center">
@@ -162,7 +172,7 @@ export default function Services() {
           </h2>
           <p className="text-gray-100 mb-8">Contact our experts for personalized solutions</p>
           <button className="bg-white text-primary px-8 py-3 rounded-full hover:bg-gray-100 transition">
-            Contact Our Experts →
+            <Link to="/Contact">Contact Our Experts →</Link>
           </button>
         </div>
       </div>

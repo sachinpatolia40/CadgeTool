@@ -1,4 +1,5 @@
 import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import {ContactInfos} from "../data/about"
 
 export default function Footer() {
   return (
@@ -9,13 +10,15 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-4">CadgeTools</h3>
             <p className="text-gray-400">
               Leading manufacturer of precision endmills and cutting tools for industrial applications.
+              <br></br>
+              Precision Engineered for Peak Performance.
             </p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-gray-400">123 Manufacturing Ave, Industrial District</p>
-            <p className="text-gray-400">contact@cadgetools.com</p>
-            <p className="text-gray-400">+1 (555) 123-4567</p>
+            <p className="text-gray-400">{ContactInfos.address}</p>
+            <p className="text-gray-400">{ContactInfos.email}</p>
+            <p className="text-gray-400">+91 {ContactInfos.phone}</p>
           </div>
         </div>
         <div className="flex justify-between items-center pt-8 border-t border-gray-800">

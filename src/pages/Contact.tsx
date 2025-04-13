@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa';
+import {ContactInfos} from "../data/about"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,8 @@ export default function Contact() {
     subject: '',
     message: ''
   });
+  const whatsAppLink:string ="https://wa.me/"+ContactInfos.phone;
+  const mapUrl :string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645564749296!5m2!1sen!2s";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,7 +51,7 @@ export default function Contact() {
                   required
                   value={formData.fullName}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                  className="input-style"
                 />
               </div>
 
@@ -60,7 +63,7 @@ export default function Contact() {
                   name="companyName"
                   value={formData.companyName}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                  className="input-style"
                 />
               </div>
 
@@ -73,7 +76,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                  className="input-style"
                 />
               </div>
 
@@ -85,7 +88,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                  className="input-style"
                 />
               </div>
 
@@ -96,7 +99,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                  className="input-style"
                 >
                   <option value="">Select a subject</option>
                   <option value="quote">Request Quote</option>
@@ -114,7 +117,7 @@ export default function Contact() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                  className="input-style"
                 ></textarea>
               </div>
 
@@ -135,9 +138,7 @@ export default function Contact() {
                 <h3 className="font-semibold">Address</h3>
               </div>
               <p className="text-gray-600">
-                123 Manufacturing Drive<br />
-                Industrial District<br />
-                New York, NY 10001
+                {ContactInfos.address }
               </p>
             </div>
 
@@ -147,8 +148,7 @@ export default function Contact() {
                 <h3 className="font-semibold">Phone</h3>
               </div>
               <p className="text-gray-600">
-                +1 (555) 123-4567<br />
-                +1 (555) 765-4321
+                {ContactInfos.phone}
               </p>
             </div>
 
@@ -158,8 +158,7 @@ export default function Contact() {
                 <h3 className="font-semibold">Email</h3>
               </div>
               <p className="text-gray-600">
-                info@cadgetools.com<br />
-                support@cadgetools.com
+                {ContactInfos.email}
               </p>
             </div>
 
@@ -182,7 +181,7 @@ export default function Contact() {
               </div>
               <p className="mb-4">Get instant support through WhatsApp</p>
               <a
-                href="https://wa.me/15551234567"
+                href={whatsAppLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-green-500 px-6 py-2 rounded-full hover:bg-gray-100 transition"
@@ -197,7 +196,7 @@ export default function Contact() {
       {/* Map Section */}
       <div className="h-96 w-full bg-gray-200 relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645564749296!5m2!1sen!2s"
+          src={mapUrl}
           width="100%"
           height="100%"
           style={{ border: 0 }}

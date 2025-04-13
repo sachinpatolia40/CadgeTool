@@ -3,14 +3,14 @@ import { Product, TechnicalParameter, Dimension, MaterialBadge, Filter, NumericF
 export const products: Product[] = [
   {
     id: '1',
-    name: 'High Performance End Mill',
+    name: 'High Performance End Mill1',
     sku: 'EM-1000',
     specs: {
       flutes: 4,
       diameter: 12,
       material: 'AlTiN'
     },
-    image: 'https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&q=80'
+    image: '../public/products/product1.png'
   },
   {
     id: '2',
@@ -21,7 +21,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: 'https://images.unsplash.com/photo-1589792923962-537704632910?auto=format&fit=crop&q=80'
+    image: '../public/products/product2.png'
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: 'https://images.unsplash.com/photo-1589793080380-6089f6eb360e?auto=format&fit=crop&q=80'
+    image: '../public/products/product3.png'
   },
   {
     id: '4',
@@ -43,7 +43,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: 'https://images.unsplash.com/photo-1590959651057-aaa98cd04fb2?auto=format&fit=crop&q=80'
+    image: '../public/products/product4.png'
   },
   {
     id: '5',
@@ -54,7 +54,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: 'https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&q=80'
+    image: '../public/products/product5.png'
   },
   {
     id: '6',
@@ -65,7 +65,39 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: 'https://images.unsplash.com/photo-1589792923962-537704632910?auto=format&fit=crop&q=80'
+    image: '../public/products/product6.png'
+  },{
+    id: '7',
+    name: 'High Performance End Mill1',
+    sku: 'EM-1000',
+    specs: {
+      flutes: 4,
+      diameter: 12,
+      material: 'AlTiN'
+    },
+    image: '../public/products/product7.png'
+  },
+  {
+    id: '8',
+    name: 'High Performance End Mill',
+    sku: 'EM-1001',
+    specs: {
+      flutes: 4,
+      diameter: 12,
+      material: 'AlTiN'
+    },
+    image: '../public/products/product8.png'
+  },
+  {
+    id: '9',
+    name: 'High Performance End Mill',
+    sku: 'EM-1002',
+    specs: {
+      flutes: 4,
+      diameter: 12,
+      material: 'AlTiN'
+    },
+    image: '../public/products/product9.png'
   }
 ];
 

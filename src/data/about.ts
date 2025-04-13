@@ -1,4 +1,4 @@
-import { TeamMember, Milestone, Certification } from '../types/about';
+import { TeamMember, Milestone, Certification, ContactInfo } from '../types/about';
 
 export const teamMembers: TeamMember[] = [
   {
@@ -66,3 +66,9 @@ export const certifications: Certification[] = [
     image: 'https://images.unsplash.com/photo-1589793687747-83b8d0ca2f9b?auto=format&fit=crop&q=80'
   }
 ];
+
+export const ContactInfos:ContactInfo={
+  email:"info@cadgetool.com",
+  phone:"9975599999",
+  address:"GIDC, Ahmedabad"
+}
