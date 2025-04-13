@@ -10,7 +10,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product1.png'
+    image: '../Products/product1.png'
   },
   {
     id: '2',
@@ -21,7 +21,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product2.png'
+    image: '../Products/product2.png'
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product3.png'
+    image: '../Products/product3.png'
   },
   {
     id: '4',
@@ -43,7 +43,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product4.png'
+    image: '../Products/product4.png'
   },
   {
     id: '5',
@@ -54,7 +54,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product5.png'
+    image: '..Products/product5.png'
   },
   {
     id: '6',
@@ -65,7 +65,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product6.png'
+    image: '../Products/product6.png'
   },{
     id: '7',
     name: 'High Performance End Mill1',
@@ -75,7 +75,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product7.png'
+    image: '../Products/product7.png'
   },
   {
     id: '8',
@@ -86,7 +86,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product8.png'
+    image: '../Products/product8.png'
   },
   {
     id: '9',
@@ -97,7 +97,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../public/products/product9.png'
+    image: '../Products/product9.png'
   }
 ];
 
