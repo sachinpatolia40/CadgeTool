@@ -11,7 +11,7 @@ export default function Services() {
         'Precision grinding',
         'Quality assurance'
       ],
-      image: 'https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&q=80'
+      image: '../Service/Service1.png'
     },
     {
       title: 'Tool Reconditioning',
@@ -22,7 +22,7 @@ export default function Services() {
         'Performance testing',
         'Quality control'
       ],
-      image: 'https://images.unsplash.com/photo-1589792923962-537704632910?auto=format&fit=crop&q=80'
+      image: '../Service/Service2.png'
     },
     {
       title: 'Engineering Consultation',
@@ -33,7 +33,7 @@ export default function Services() {
         'Performance optimization',
         'Technical support'
       ],
-      image: 'https://images.unsplash.com/photo-1589793080380-6089f6eb360e?auto=format&fit=crop&q=80'
+      image: '../Service/Service3.png'
     },
     {
       title: 'Surface Treatment',
@@ -44,7 +44,7 @@ export default function Services() {
         'Wear resistance',
         'Enhanced durability'
       ],
-      image: 'https://images.unsplash.com/photo-1590959651057-aaa98cd04fb2?auto=format&fit=crop&q=80'
+      image: '../Service/Service4.png'
     },
     {
       title: 'Quality Testing',
@@ -55,7 +55,7 @@ export default function Services() {
         'Performance testing',
         'Documentation'
       ],
-      image: 'https://images.unsplash.com/photo-1590959651057-aaa98cd04fb2?auto=format&fit=crop&q=80'
+      image: '../Service/Service5.png'
     },
     {
       title: 'Custom Solutions',
@@ -66,7 +66,7 @@ export default function Services() {
         'Process integration',
         'Ongoing support'
       ],
-      image: 'https://images.unsplash.com/photo-1590959651057-aaa98cd04fb2?auto=format&fit=crop&q=80'
+      image: '../Service/Service6.png'
     }
   ];
 
@@ -82,12 +82,12 @@ export default function Services() {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-64 bg-gray-900">
+      <div className="relative h-96 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1565439371467-61a8857372e3?auto=format&fit=crop&q=80"
+            src="../Service.png"
             alt="Manufacturing"
             className="w-full h-full object-cover opacity-40"
           />
@@ -101,7 +101,7 @@ export default function Services() {
       </div>
 
       {/* Services Grid */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto md:w-9/12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -134,13 +134,13 @@ export default function Services() {
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-6">Technical Capabilities</h2>
               <img
-                src="https://images.unsplash.com/photo-1589793080380-6089f6eb360e?auto=format&fit=crop&q=80"
+                src="../Service/TechSpecification.png"
                 alt="Technical Specifications"
                 className="rounded-lg shadow-lg"
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-semibold mb-4">Specifications</h3>
+              <h3 className="text-xl font-semibold md:mb-6 mb-4">Specifications</h3>
               <ul className="space-y-3">
                 {specifications.map((spec, index) => (
                   <li key={index} className="flex items-center text-gray-700">

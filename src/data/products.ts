@@ -54,7 +54,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '..Products/product5.png'
+    image: '../Products/product5.png'
   },
   {
     id: '6',
