@@ -74,11 +74,11 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/products" element={<Products />} />
+        <Route path={`${import.meta.env.BASE_URL}/`} element={<Home />} />
+        <Route path={`${import.meta.env.BASE_URL}/about`}  element={<About />} />
+        <Route path={`${import.meta.env.BASE_URL}/services`}  element={<Services />} />
+        <Route path={`${import.meta.env.BASE_URL}/contact`}  element={<Contact />} />
+        <Route path={`${import.meta.env.BASE_URL}/products`}  element={<Products />} />
       </Routes>
       <Footer />
     </>

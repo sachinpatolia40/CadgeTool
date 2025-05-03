@@ -181,7 +181,7 @@ export default function Products() {
             <div className="flex flex-col md:flex-row gap-8 mb-8">
               <div className="flex-1">
                 <img
-                  src={`${import.meta.env.BASE_URL}ProductDescription/product1.png`}
+                  src={`${import.meta.env.BASE_URL}/ProductDescription/product1.png`}
                   alt="Product Technical Drawing"
                   className="w-full"
                 />

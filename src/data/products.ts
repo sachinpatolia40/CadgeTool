@@ -10,7 +10,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product1.png`,
+    image: `${import.meta.env.BASE_URL}/Products/product1.png`,
     dimensions: [
       {
         code: '12.700',
@@ -40,7 +40,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product2.png`,
+    image: `${import.meta.env.BASE_URL}/Products/product2.png`,
     dimensions: [
       {
         code: '12.700',
@@ -70,7 +70,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product3.png`,
+    image: `${import.meta.env.BASE_URL}/Products/product3.png`,
     dimensions: [
       {
         code: '12.700',
@@ -100,7 +100,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product4.png`,
+    image: `${import.meta.env.BASE_URL}/Products/product4.png`,
     dimensions: [
       {
         code: '12.700',
@@ -130,7 +130,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product5.png`,
+    image: `${import.meta.env.BASE_URL}/Products/product5.png`,
     dimensions: [
       {
         code: '12.700',
@@ -160,7 +160,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product6.png`, dimensions: [
+    image: `${import.meta.env.BASE_URL}/Products/product6.png`, dimensions: [
       {
         code: '12.700',
         d1: '1/2',
@@ -188,7 +188,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: `${import.meta.env.BASE_URL}Products/product7.png`,
+    image: `${import.meta.env.BASE_URL}/Products/product7.png`,
     dimensions: [
       {
         code: '12.700',
@@ -218,7 +218,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product8.png',
+    image: `${import.meta.env.BASE_URL}/Products/product8.png`,
     dimensions: [
       {
         code: '12.700',
@@ -248,7 +248,7 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product9.png',
+    image:`${import.meta.env.BASE_URL}/Products/product9.png`,
     dimensions: [
       {
         code: '12.700',

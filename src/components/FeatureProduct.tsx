@@ -4,22 +4,22 @@ const featureProductList = [
     {
         title: 'High-Speed Steel Endmills',
         description: 'Optimal performance for standard machining operations',
-        image: '../public/feature1.png'
+        image: `${import.meta.env.BASE_URL}/feature1.png`
     },
     {
         title: 'Carbide Endmills',
         description: 'Superior hardness and wear resistance',
-        image: '../public/feature2.png'
+        image: `${import.meta.env.BASE_URL}/feature2.png`
     },
     {
         title: 'Specialty Cutters',
         description: 'Custom solutions for unique applications',
-        image: '../public/feature3.png'
+        image: `${import.meta.env.BASE_URL}/feature3.png`
     },
     {
         title: 'Micro Tools',
         description: 'Precision tools for intricate operations',
-        image: '../public/feature2.png'
+        image: `${import.meta.env.BASE_URL}/feature2.png`
     }
 ]
 

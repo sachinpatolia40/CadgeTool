@@ -11,7 +11,7 @@ export default function Services() {
         'Precision grinding',
         'Quality assurance'
       ],
-      image: `${import.meta.env.BASE_URL}Service/Service1.png`
+      image: `${import.meta.env.BASE_URL}/Service/Service1.png`
     },
     {
       title: 'Tool Reconditioning',
@@ -22,7 +22,7 @@ export default function Services() {
         'Performance testing',
         'Quality control'
       ],
-      image: `${import.meta.env.BASE_URL}Service/Service2.png`
+      image: `${import.meta.env.BASE_URL}/Service/Service2.png`
     },
     {
       title: 'Engineering Consultation',
@@ -33,7 +33,7 @@ export default function Services() {
         'Performance optimization',
         'Technical support'
       ],
-      image: `${import.meta.env.BASE_URL}Service/Service3.png`
+      image: `${import.meta.env.BASE_URL}/Service/Service3.png`
     },
     {
       title: 'Surface Treatment',
@@ -44,7 +44,7 @@ export default function Services() {
         'Wear resistance',
         'Enhanced durability'
       ],
-      image: `${import.meta.env.BASE_URL}Service/Service4.png`
+      image: `${import.meta.env.BASE_URL}/Service/Service4.png`
     },
     {
       title: 'Quality Testing',
@@ -55,7 +55,7 @@ export default function Services() {
         'Performance testing',
         'Documentation'
       ],
-      image: `${import.meta.env.BASE_URL}Service/Service5.png`
+      image: `${import.meta.env.BASE_URL}/Service/Service5.png`
     },
     {
       title: 'Custom Solutions',
@@ -66,7 +66,7 @@ export default function Services() {
         'Process integration',
         'Ongoing support'
       ],
-      image: `${import.meta.env.BASE_URL}Service/Service6.png`
+      image: `${import.meta.env.BASE_URL}/Service/Service6.png`
     }
   ];
 
@@ -87,7 +87,7 @@ export default function Services() {
       <div className="relative h-96 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src={import.meta.env.BASE_URL + "Service.png"}
+            src={import.meta.env.BASE_URL + "/Service.png"}
             alt="Manufacturing"
             className="w-full h-full object-cover opacity-40"
           />
@@ -160,7 +160,7 @@ export default function Services() {
           <div className='bg-white shadow-lg rounded p-4 mb-6'>
             <h2 className='px-8 font-bold'>Complete Product Catelog</h2>
             <p className=' mb-4'>PDF  15.2 MB </p>
-            <a className='inline-flex gap-2' href='../public/Catalog/Catalog.pdf' download="CadgeTool Catalog " style={{'color':" rgb(111 158 229)"}}><FaDownload className='mt-1'/> <b>Download Now</b></a>
+            <a className='inline-flex gap-2' href={`${import.meta.env.BASE_URL}/Catalog/Catalog.pdf`} download="CadgeTool Catalog " style={{'color':" rgb(111 158 229)"}}><FaDownload className='mt-1'/> <b>Download Now</b></a>
           </div>
         </div>
       </div>

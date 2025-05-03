@@ -10,7 +10,7 @@ export default function Navigation() {
         {/* Logo Section */}
         <div>
           <Link to="/">
-            <img src={import.meta.env.BASE_URL + "logo.png"} alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
+            <img src={import.meta.env.BASE_URL + "/logo.png"} alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
           </Link>
         </div>
 
@@ -30,11 +30,11 @@ export default function Navigation() {
 
           {/* Navbar Links */}
           <div className={`w-full md:flex md:items-center md:space-x-6 ${show ? 'block' : 'hidden'} md:block`} id="navbar-default">
-            <Link to="/" className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Home</Link>
-            <Link to="/about" className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">About Us</Link>
-            <Link to="/products" className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Products</Link>
-            <Link to="/services" className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Services</Link>
-            <Link to="/contact" className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Contact Us</Link>
+            <Link to={`${import.meta.env.BASE_URL}/`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Home</Link>
+            <Link to={`${import.meta.env.BASE_URL}/about`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">About Us</Link>
+            <Link to={`${import.meta.env.BASE_URL}/products`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Products</Link>
+            <Link to={`${import.meta.env.BASE_URL}/services`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Services</Link>
+            <Link to={`${import.meta.env.BASE_URL}/contact`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300">Contact Us</Link>
           </div>
         </div>
       </div>

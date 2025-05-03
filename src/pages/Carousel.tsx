@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 const Carousel = () => {
   const images = [
-    '../public/carousel4.png',
-    '../public/carousel3.jpg',
-    '../public/carousel1.jpg',
+    `${import.meta.env.BASE_URL}/carousel4.png`,
+    `${import.meta.env.BASE_URL}/carousel3.jpg`,
+    `${import.meta.env.BASE_URL}/carousel1.jpg`,
   ];
 
   const content = [
