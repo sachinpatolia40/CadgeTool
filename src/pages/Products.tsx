@@ -1,15 +1,31 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { FaSearch, FaThLarge, FaList } from 'react-icons/fa';
 import { products, materialFilters, numericFilters } from '../data/products';
+import Modal from '../components/Modal'; // Import Modal component
+import { Product } from '../types/product';
 
 export default function Products() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [searchQuery, setSearchQuery] = useState('');
-  let [filterProducts, setFilterProducts] = useState(products);
+  const [filterProducts, setFilterProducts] = useState(products);
+  const [isModalOpen, setIsModalOpen] = useState(false);  // Modal state
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);  // Selected product
+
   useEffect(() => {
-    setFilterProducts(products.filter(value => value.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase())))
-  }, [searchQuery])
+    setFilterProducts(products.filter(value => value.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase())));
+  }, [searchQuery]);
+
+  // Function to open the modal with the selected product
+  const openModal = (product: any) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
 
   return (
     <div className="min-h-screen pt-16 bg-gray-100">
@@ -29,9 +45,6 @@ export default function Products() {
                 <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               </div>
             </div>
-            {/* <button className="px-4 py-2 bg-white rounded-lg border border-gray-300 hover:bg-gray-50">
-              Advanced Search
-            </button> */}
           </div>
         </div>
       </div>
@@ -111,8 +124,7 @@ export default function Products() {
               {filterProducts.map((product) => (
                 <div
                   key={product.id}
-                  className={`bg-white rounded-lg shadow-md overflow-hidden ${viewMode === 'list' ? 'flex' : ''
-                    }`}
+                  className={`bg-white rounded-lg shadow-md overflow-hidden ${viewMode === 'list' ? 'flex' : ''}`}
                 >
                   <img
                     src={product.image}
@@ -130,11 +142,11 @@ export default function Products() {
                       </div>
                     </div>
                     <div className='flex justify-end'>
-                      <button className='bg-blue-600 px-6 py-2 rounded-md text-white'>
-                        <Link
-                          to={`/products/${product.id}`}>
-                          View →
-                        </Link>
+                      <button
+                        className='bg-blue-600 px-6 py-2 rounded-md text-white'
+                        onClick={() => openModal(product)} // Open modal on click
+                      >
+                        View →
                       </button>
                     </div>
                   </div>
@@ -144,6 +156,93 @@ export default function Products() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        {selectedProduct && (
+          <>
+            <h2 className="text-2xl font-bold">{selectedProduct.name}</h2>
+            <div className="flex gap-2 mb-4">
+              {/* {selectedProduct.materialBadges.map((badge) => (
+                <span
+                  key={badge.letter}
+                  className={`${badge.color} w-8 h-8 rounded-full flex items-center justify-center text-white font-semibold`}
+                >
+                  {badge.letter}
+                </span>
+              ))} */}
+            </div>
+            <div className="space-y-2 text-gray-600 mb-4">
+              {/* <p>Series: {selectedProduct.series} - Code: {selectedProduct.code}</p> */}
+              {/* <p>EDP: {selectedProduct.edp}</p> */}
+              <p>SKU: {selectedProduct.sku}</p>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-8 mb-8">
+              <div className="flex-1">
+                <img
+                  src={`${import.meta.env.BASE_URL}ProductDescription/product1.png`}
+                  alt="Product Technical Drawing"
+                  className="w-full"
+                />
+              </div>
+              <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-4">Technical Parameters</h2>
+              <div className="space-y-4">
+                {/* <h3 className="font-semibold text-lg">Technical Parameters</h3> */}
+                {selectedProduct.technicalParameter.map((param, index) => (
+                  <div key={index} className="flex items-center gap-4">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <div className="flex-1">
+                      <span className="font-medium">{param.label}: </span>
+                      <span className="text-gray-600">{param.value}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            </div>
+           
+
+            {/* Dimensions Table */}
+            <h3 className="font-semibold text-lg mt-4">Dimensions</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border px-4 py-2 text-left">Code No.</th>
+                    <th className="border px-4 py-2 text-left">d1 (in)</th>
+                    <th className="border px-4 py-2 text-left">d2 h6 (in)</th>
+                    <th className="border px-4 py-2 text-left">d3 (in)</th>
+                    <th className="border px-4 py-2 text-left">l1 (in)</th>
+                    <th className="border px-4 py-2 text-left">l2 (in)</th>
+                    <th className="border px-4 py-2 text-left">l3 (in)</th>
+                    <th className="border px-4 py-2 text-left">Radius (in)</th>
+                    <th className="border px-4 py-2 text-left">Flutes</th>
+                    <th className="border px-4 py-2 text-left">Shank Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {selectedProduct.dimensions.map((dim, index) => (
+                    <tr key={index}>
+                      <td className="border px-4 py-2">{dim.code}</td>
+                      <td className="border px-4 py-2">{dim.d1}</td>
+                      <td className="border px-4 py-2">{dim.d2h6}</td>
+                      <td className="border px-4 py-2">{dim.d3}</td>
+                      <td className="border px-4 py-2">{dim.l1}</td>
+                      <td className="border px-4 py-2">{dim.l2}</td>
+                      <td className="border px-4 py-2">{dim.l3}</td>
+                      <td className="border px-4 py-2">{dim.radius}</td>
+                      <td className="border px-4 py-2">{dim.flutes}</td>
+                      <td className="border px-4 py-2">{dim.shankType}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
+      </Modal>
     </div>
   );
 }

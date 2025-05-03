@@ -8,6 +8,8 @@ export interface Product {
     material: string;
   };
   image: string;
+  dimensions : Dimension[];
+  technicalParameter :TechnicalParameter[]
 }
 
 export interface TechnicalParameter {

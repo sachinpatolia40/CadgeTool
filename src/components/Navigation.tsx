@@ -10,7 +10,7 @@ export default function Navigation() {
         {/* Logo Section */}
         <div>
           <Link to="/">
-            <img src="/logo.png" alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
+            <img src={import.meta.env.BASE_URL + "logo.png"} alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
           </Link>
         </div>
 

@@ -11,7 +11,7 @@ export default function Services() {
         'Precision grinding',
         'Quality assurance'
       ],
-      image: '../Service/Service1.png'
+      image: `${import.meta.env.BASE_URL}Service/Service1.png`
     },
     {
       title: 'Tool Reconditioning',
@@ -22,7 +22,7 @@ export default function Services() {
         'Performance testing',
         'Quality control'
       ],
-      image: '../Service/Service2.png'
+      image: `${import.meta.env.BASE_URL}Service/Service2.png`
     },
     {
       title: 'Engineering Consultation',
@@ -33,7 +33,7 @@ export default function Services() {
         'Performance optimization',
         'Technical support'
       ],
-      image: '../Service/Service3.png'
+      image: `${import.meta.env.BASE_URL}Service/Service3.png`
     },
     {
       title: 'Surface Treatment',
@@ -44,7 +44,7 @@ export default function Services() {
         'Wear resistance',
         'Enhanced durability'
       ],
-      image: '../Service/Service4.png'
+      image: `${import.meta.env.BASE_URL}Service/Service4.png`
     },
     {
       title: 'Quality Testing',
@@ -55,7 +55,7 @@ export default function Services() {
         'Performance testing',
         'Documentation'
       ],
-      image: '../Service/Service5.png'
+      image: `${import.meta.env.BASE_URL}Service/Service5.png`
     },
     {
       title: 'Custom Solutions',
@@ -66,7 +66,7 @@ export default function Services() {
         'Process integration',
         'Ongoing support'
       ],
-      image: '../Service/Service6.png'
+      image: `${import.meta.env.BASE_URL}Service/Service6.png`
     }
   ];
 
@@ -87,7 +87,7 @@ export default function Services() {
       <div className="relative h-96 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src="../Service.png"
+            src={import.meta.env.BASE_URL + "Service.png"}
             alt="Manufacturing"
             className="w-full h-full object-cover opacity-40"
           />
@@ -134,7 +134,7 @@ export default function Services() {
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-6">Technical Capabilities</h2>
               <img
-                src="../Service/TechSpecification.png"
+              src={import.meta.env.BASE_URL + "/Service/TechSpecification.png"}
                 alt="Technical Specifications"
                 className="rounded-lg shadow-lg"
               />

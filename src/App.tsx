@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
 import About from './pages/About';
 import Carousel from './pages/Carousel'
 import { FeatureProducts } from './components/FeatureProduct';
@@ -80,7 +79,6 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </>

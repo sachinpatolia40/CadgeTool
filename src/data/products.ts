@@ -10,7 +10,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product1.png'
+    image: `${import.meta.env.BASE_URL}Products/product1.png`,
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '2',
@@ -21,7 +40,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product2.png'
+    image: `${import.meta.env.BASE_URL}Products/product2.png`,
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '3',
@@ -32,7 +70,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product3.png'
+    image: `${import.meta.env.BASE_URL}Products/product3.png`,
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '4',
@@ -43,7 +100,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product4.png'
+    image: `${import.meta.env.BASE_URL}Products/product4.png`,
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '5',
@@ -54,7 +130,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product5.png'
+    image: `${import.meta.env.BASE_URL}Products/product5.png`,
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '6',
@@ -65,8 +160,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product6.png'
-  },{
+    image: `${import.meta.env.BASE_URL}Products/product6.png`, dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
+  }, {
     id: '7',
     name: 'High Performance End Mill1',
     sku: 'EM-1000',
@@ -75,7 +188,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product7.png'
+    image: `${import.meta.env.BASE_URL}Products/product7.png`,
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '8',
@@ -86,7 +218,26 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product8.png'
+    image: '../Products/product8.png',
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ],
+    technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   },
   {
     id: '9',
@@ -97,7 +248,25 @@ export const products: Product[] = [
       diameter: 12,
       material: 'AlTiN'
     },
-    image: '../Products/product9.png'
+    image: '../Products/product9.png',
+    dimensions: [
+      {
+        code: '12.700',
+        d1: '1/2',
+        d2h6: '1/2',
+        d3: '-',
+        l1: '3 1/2',
+        l2: '1',
+        l3: '-',
+        radius: '0.005',
+        flutes: 4,
+        shankType: 'HB Weldon flat'
+      }
+    ], technicalParameter: [
+      { label: 'Cutting Speed', value: '180-220 m/min' },
+      { label: 'Feed Rate', value: '0.05-0.15 mm/tooth' },
+      { label: 'Depth of Cut', value: 'Up to 1×D' }
+    ]
   }
 ];
 
