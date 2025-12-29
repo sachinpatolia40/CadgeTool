@@ -181,33 +181,33 @@ export default function Products() {
             <div className="flex flex-col md:flex-row gap-8 mb-8">
               <div className="flex-1">
                 <img
-                  src={`${import.meta.env.BASE_URL}/ProductDescription/product1.png`}
+                  src={selectedProduct.techSketch}
                   alt="Product Technical Drawing"
                   className="w-full"
                 />
               </div>
               <div className="flex-1">
-              <h2 className="text-xl font-semibold mb-4">Technical Parameters</h2>
-              <div className="space-y-4">
-                {/* <h3 className="font-semibold text-lg">Technical Parameters</h3> */}
-                {selectedProduct.technicalParameter.map((param, index) => (
-                  <div key={index} className="flex items-center gap-4">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <div className="flex-1">
-                      <span className="font-medium">{param.label}: </span>
-                      <span className="text-gray-600">{param.value}</span>
+                <h2 className="text-xl font-semibold mb-4">Technical Parameters</h2>
+                <div className="space-y-4">
+                  {/* <h3 className="font-semibold text-lg">Technical Parameters</h3> */}
+                  {selectedProduct.technicalParameter.map((param, index) => (
+                    <div key={index} className="flex items-center gap-4">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <div className="flex-1">
+                        <span className="font-medium">{param.label}: </span>
+                        <span className="text-gray-600">{param.value}</span>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
-            </div>
-           
+
 
             {/* Dimensions Table */}
             <h3 className="font-semibold text-lg mt-4">Dimensions</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
+            <div className="mt-2 max-h-80 overflow-y-auto overflow-x-auto border rounded">
+              <table className="w-full border-collapse text-sm">
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="border px-4 py-2 text-left">Code No.</th>
@@ -233,13 +233,13 @@ export default function Products() {
                       <td className="border px-4 py-2">{dim.l2}</td>
                       <td className="border px-4 py-2">{dim.l3}</td>
                       <td className="border px-4 py-2">{dim.radius}</td>
-                      <td className="border px-4 py-2">{dim.flutes}</td>
                       <td className="border px-4 py-2">{dim.shankType}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+
           </>
         )}
       </Modal>

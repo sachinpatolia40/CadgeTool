@@ -8,8 +8,9 @@ export interface Product {
     material: string;
   };
   image: string;
-  dimensions : Dimension[];
-  technicalParameter :TechnicalParameter[]
+  techSketch: string,
+  dimensions: Dimension[];
+  technicalParameter: TechnicalParameter[]
 }
 
 export interface TechnicalParameter {
@@ -28,6 +29,15 @@ export interface Dimension {
   radius: string;
   flutes: number;
   shankType: string;
+  variant?: "Regular" | "Long" | "Extra Long";
+  threadSize?: string;      // e.g. "M10 x 1.5"
+  pitch?: string;           // pitch in mm (from your table column "TPI")
+  cuttingDia?: string;      // cutting dia (mm)
+  threadAngle?: string;     // e.g. "60°"
+  width?: string;
+  depth?: string;
+  xAngle?: string;   // X angle (°)
+  yAngle?: string;   // Y angle (°)
 }
 
 export interface MaterialBadge {
