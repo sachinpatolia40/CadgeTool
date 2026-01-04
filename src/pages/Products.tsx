@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaSearch, FaThLarge, FaList } from 'react-icons/fa';
-import { products, materialFilters, numericFilters } from '../data/products';
+import { products, numericFilters } from '../data/products';
 import Modal from '../components/Modal'; // Import Modal component
 import { Product } from '../types/product';
 
@@ -52,35 +52,14 @@ export default function Products() {
       <div className="container mx-auto px-4 py-8 w-[90]">
         <div className="flex flex-col md:flex-row gap-8">
           {/* Filters Sidebar */}
-          <div className="w-full md:w-64 space-y-6 rounded-button">
-            <div className="flex justify-between items-center mt-3">
+          {/* <div className="w-full md:w-64 space-y-6 rounded-button"> */}
+            {/* <div className="flex justify-between items-center mt-3">
               <h2 className="text-lg font-semibold">Filters</h2>
               <button className="text-primary text-sm hover:text-blue-700">Clear All</button>
-            </div>
-
-            {/* Material Filters */}
-            <div className="space-y-4">
-              <h3 className="font-medium">Material to Machine</h3>
-              {materialFilters.map((filter) => (
-                <div key={filter.id} className='flex items-center gap-3'>
-                  <input type='checkbox' id={filter.id} className='rounded border-gray-300'></input>
-                  <div className='flex gap-3'>
-                    <div className={`${filter.color} flex items-center justify-center rounded-lg p-4`}>
-                      <span className='text-white'>{filter.id[0].toUpperCase()}</span>
-                    </div>
-                    <div className=''>
-                      <label htmlFor={filter.id}>
-                        <span>{filter.name}</span>
-                        <span className='block text-gray-400'>{filter.count} item(s)</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            </div> */}
 
             {/* Numeric Filters */}
-            {numericFilters.map((filter) => (
+            {/* {numericFilters.map((filter) => (
               <div key={filter.name} className="space-y-2">
                 <h3 className="font-medium text-sm">{filter.name}</h3>
                 <input
@@ -89,8 +68,8 @@ export default function Products() {
                   className="w-full px-3 py-2 rounded border border-gray-300 focus:outline-none focus:border-primary"
                 />
               </div>
-            ))}
-          </div>
+            ))} */}
+          {/* </div> */}
 
           {/* Products Grid */}
           <div className="flex-1 productListing">
@@ -111,12 +90,6 @@ export default function Products() {
                     <FaList />
                   </button>
                 </div>
-                <select className="input-style">
-                  <option>Sort by: Featured</option>
-                  <option>Price: Low to High</option>
-                  <option>Price: High to Low</option>
-                  <option>Newest</option>
-                </select>
               </div>
             </div>
 
@@ -161,20 +134,10 @@ export default function Products() {
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         {selectedProduct && (
           <>
-            <h2 className="text-2xl font-bold">{selectedProduct.name}</h2>
             <div className="flex gap-2 mb-4">
-              {/* {selectedProduct.materialBadges.map((badge) => (
-                <span
-                  key={badge.letter}
-                  className={`${badge.color} w-8 h-8 rounded-full flex items-center justify-center text-white font-semibold`}
-                >
-                  {badge.letter}
-                </span>
-              ))} */}
+            <h2 className="text-2xl font-bold">{selectedProduct.name}</h2>
             </div>
             <div className="space-y-2 text-gray-600 mb-4">
-              {/* <p>Series: {selectedProduct.series} - Code: {selectedProduct.code}</p> */}
-              {/* <p>EDP: {selectedProduct.edp}</p> */}
               <p>SKU: {selectedProduct.sku}</p>
             </div>
 
