@@ -18,7 +18,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <p className="text-gray-400">{ContactInfos.address}</p>
             <p className="text-gray-400">{ContactInfos.email}</p>
-            <p className="text-gray-400">+91 {ContactInfos.phone}</p>
+            <p className="text-gray-400">+91 {ContactInfos.phone1}</p>
           </div>
         </div>
         <div className="flex justify-between items-center pt-8 border-t border-gray-800">

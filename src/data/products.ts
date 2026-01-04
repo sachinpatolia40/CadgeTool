@@ -1,4 +1,4 @@
-import { Product, TechnicalParameter, Dimension, MaterialBadge, Filter, NumericFilter } from '../types/product';
+import { Product, TechnicalParameter, Dimension, MaterialBadge, Filter } from '../types/product';
 import { cem2TwoFlute } from "../data/ProductData/cem2TwoFlute"
 import { cem4FourFlute } from "../data/ProductData/cem4FourFlute"
 import { cem3ThreeFlute } from "../data/ProductData/cem3ThreeFlute"

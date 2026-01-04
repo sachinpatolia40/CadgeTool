@@ -52,7 +52,7 @@ export interface Filter {
   color: string;
 }
 
-export interface NumericFilter {
-  name: string;
-  placeholder: string;
-}
+// export interface NumericFilter {
+//   name: string;
+//   placeholder: string;
+// }
