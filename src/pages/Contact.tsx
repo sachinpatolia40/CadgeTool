@@ -12,7 +12,7 @@ export default function Contact() {
     message: ''
   });
   const whatsAppLink:string ="https://wa.me/"+ContactInfos.phone;
-  const mapUrl :string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645564749296!5m2!1sen!2s";
+  const mapUrl :string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.977351890043!2d72.67592847509226!3d23.03671497916395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e870039b632db%3A0x9fbec5a6164e080b!2sCadge%20Tools!5e1!3m2!1sen!2sin!4v1767511762807!5m2!1sen!2sin";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -148,7 +148,7 @@ export default function Contact() {
                 <h3 className="font-semibold">Phone</h3>
               </div>
               <p className="text-gray-600">
-                {ContactInfos.phone}
+               +91 {ContactInfos.phone1}, +91 {ContactInfos.phone2}
               </p>
             </div>
 

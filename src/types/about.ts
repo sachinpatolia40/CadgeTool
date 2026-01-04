@@ -19,6 +19,7 @@ export interface Certification {
 
 export interface ContactInfo{
   email:string,
-  phone:string,
+  phone1:string,
+  phone2:string,
   address:string
 }

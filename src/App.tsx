@@ -61,7 +61,7 @@ function Home() {
           <h2 className="text-3xl font-bold mb-4">Ready to Elevate Your Manufacturing?</h2>
           <p className="text-gray-600 mb-8">Get in touch with our experts today</p>
           <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">
-            <Link to='/Contact/'>Request a Quote</Link>
+            <Link to={`${import.meta.env.BASE_URL}/Contact`} >Request a Quote</Link>
           </button>
         </div>
       </section>

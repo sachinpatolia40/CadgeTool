@@ -9,7 +9,7 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Section */}
         <div>
-          <Link to="/">
+          <Link to={`${import.meta.env.BASE_URL}/`} >
             <img src={import.meta.env.BASE_URL + "/logo.png"} alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
           </Link>
         </div>

@@ -69,6 +69,7 @@ export const certifications: Certification[] = [
 
 export const ContactInfos:ContactInfo={
   email:"info@cadgetool.com",
-  phone:"9975599999",
-  address:"GIDC, Ahmedabad"
+  phone1:"9898506560",
+  phone2:"9879426326",
+  address:"Cross Road, 18, Vaibhav, Industrial Estate, Sardar Patel Ring Rd, behind Super Nova Kia Showroom, Nikol, Kathwada, Ahmedabad, Gujarat 382430"
 }
