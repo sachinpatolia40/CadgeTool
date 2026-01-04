@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaSearch, FaThLarge, FaList } from 'react-icons/fa';
-import { products, numericFilters } from '../data/products';
+import { products } from '../data/products';
 import Modal from '../components/Modal'; // Import Modal component
 import { Product } from '../types/product';
 

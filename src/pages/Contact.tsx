@@ -11,7 +11,7 @@ export default function Contact() {
     subject: '',
     message: ''
   });
-  const whatsAppLink:string ="https://wa.me/"+ContactInfos.phone;
+  const whatsAppLink:string ="https://wa.me/"+ContactInfos.phone1;
   const mapUrl :string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.977351890043!2d72.67592847509226!3d23.03671497916395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e870039b632db%3A0x9fbec5a6164e080b!2sCadge%20Tools!5e1!3m2!1sen!2sin!4v1767511762807!5m2!1sen!2sin";
 
   const handleSubmit = (e: React.FormEvent) => {

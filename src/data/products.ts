@@ -65,13 +65,13 @@ export const materialFilters: Filter[] = [
   { id: 'hardened-steel', name: 'Hardened Steel', count: 143, color: 'bg-gray-500' }
 ];
 
-export const numericFilters: NumericFilter[] = [
-  { name: 'Diameter mm', placeholder: 'Enter value' },
-  { name: 'Length of cut mm', placeholder: 'Enter value' },
-  { name: 'Overall Length mm', placeholder: 'Enter value' },
-  { name: 'Corner Radius mm', placeholder: 'Enter value' },
-  { name: 'Shank Type', placeholder: 'Enter value' }
-];
+// export const numericFilters: NumericFilter[] = [
+//   { name: 'Diameter mm', placeholder: 'Enter value' },
+//   { name: 'Length of cut mm', placeholder: 'Enter value' },
+//   { name: 'Overall Length mm', placeholder: 'Enter value' },
+//   { name: 'Corner Radius mm', placeholder: 'Enter value' },
+//   { name: 'Shank Type', placeholder: 'Enter value' }
+// ];
 
 export const technicalParameters: TechnicalParameter[] = [
   { label: 'Cutting Speed', value: '180-220 m/min' },
