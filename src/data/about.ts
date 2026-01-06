@@ -68,8 +68,8 @@ export const certifications: Certification[] = [
 ];
 
 export const ContactInfos:ContactInfo={
-  email:"info@cadgetool.com",
+  email:" cadgetools@gmail.com",
   phone1:"9898506560",
   phone2:"9879426326",
-  address:"Cross Road, 18, Vaibhav, Industrial Estate, Sardar Patel Ring Rd, behind Super Nova Kia Showroom, Nikol, Kathwada, Ahmedabad, Gujarat 382430"
+  address:"18, Vaibhav Industrial Estate, Behind Super Nova Kian Showroom,  Nikol-Kathwada Cross Road, S. P. Ring Road, Kathwada, Ahmedabad - 382 430"
 }
