@@ -1,9 +1,9 @@
-import { FaCheck, FaIndustry, FaUsers, FaGlobe } from 'react-icons/fa';
-import { teamMembers, milestones, certifications } from '../data/about';
+import { FaCheck, FaIndustry, FaUsers, FaGlobe, FaCogs, FaBullseye, FaTools, FaShieldAlt } from 'react-icons/fa';
+import { teamMembers, certifications } from '../data/about';
 
 export default function About() {
   const stats = [
-    { icon: FaIndustry, value: '25+', label: 'Years Experience' },
+    { icon: FaIndustry, value: '10+', label: 'Years Experience' },
     { icon: FaUsers, value: '1000+', label: 'Global Clients' },
     { icon: FaGlobe, value: '50+', label: 'Countries Served' }
   ];
@@ -13,6 +13,64 @@ export default function About() {
     { title: 'Quality', description: 'Uncompromising standards in every product' },
     { title: 'Sustainability', description: 'Environmentally conscious manufacturing' },
     { title: 'Partnership', description: 'Building lasting relationships with clients' }
+  ];
+
+  const highlights = [
+    {
+      icon: FaBullseye,
+      title: 'Precision-Driven Performance',
+      description:
+        'Solid carbide cutting tools engineered for high accuracy, durability, and consistent results in demanding machining environments.'
+    },
+    {
+      icon: FaCogs,
+      title: 'Advanced CNC Grinding',
+      description:
+        'Manufactured with advanced CNC grinding technology, premium-grade carbide, and strict quality controls for long tool life.'
+    },
+    {
+      icon: FaTools,
+      title: 'Standard + Custom Profiles',
+      description:
+        'From standard catalogue tools to customized profiles—reliable solutions for milling, drilling, and profiling applications.'
+    },
+    {
+      icon: FaShieldAlt,
+      title: 'Quality You Can Trust',
+      description:
+        'Every tool reflects our commitment to precision, efficiency, and customer satisfaction—built for modern machining needs.'
+    }
+  ];
+
+  const industries = [
+    'Automotive',
+    'Aerospace',
+    'Die & Mold',
+    'Engineering',
+    'General Manufacturing'
+  ];
+
+  const processSteps = [
+    {
+      title: 'Design & Engineering',
+      description:
+        'Tool geometry and performance goals are defined with precision—optimized for your application and material.'
+    },
+    {
+      title: 'CNC Manufacturing',
+      description:
+        'High-accuracy CNC grinding ensures tight tolerances, superior edge quality, and repeatable production consistency.'
+    },
+    {
+      title: 'Quality Control',
+      description:
+        'Strict inspection and quality checks ensure consistent performance, reliability, and extended tool life.'
+    },
+    {
+      title: 'Delivery & Support',
+      description:
+        'We deliver dependable cutting solutions with responsive support—helping you improve throughput and efficiency.'
+    }
   ];
 
   return (
@@ -31,7 +89,7 @@ export default function About() {
             Advancing Manufacturing Through Innovation
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
-            Since 1995, CadgeTools has been at the forefront of precision cutting tool manufacturing,
+            Established in 2024 with over 10 years of proven experience in the same field. CadgeTools has been at the forefront of precision cutting tool manufacturing,
             delivering excellence to industries worldwide.
           </p>
         </div>
@@ -52,28 +110,112 @@ export default function About() {
         </div>
       </div>
 
-      {/* Our Story Section */}
+      {/* About / Story (REPLACED SECTION) */}
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Journey</h2>
-          <div className="space-y-12">
-            {milestones.map((milestone, index) => (
-              <div
-                key={index}
-                className={`flex flex-col md:flex-row gap-8 items-center ${
-                  index % 2 === 1 ? 'md:flex-row-reverse' : ''
-                }`}
-              >
-                <div className="flex-1">
-                  <div className="text-4xl font-bold text-primary mb-2">{milestone.year}</div>
-                  <h3 className="text-2xl font-semibold mb-4">{milestone.title}</h3>
-                  <p className="text-gray-600">{milestone.description}</p>
-                </div>
-                <div className="flex-1">
-                  <div className="h-1 bg-primary w-full"></div>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold">About Us</h2>
+              <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
+                We are a precision-driven manufacturing company specializing in solid carbide cutting tools designed for high performance, accuracy, and durability.
+                With a strong focus on innovation and quality, we deliver cutting solutions that meet the evolving needs of modern machining industries.
+              </p>
+            </div>
+
+            {/* Two-column: copy + key card */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              <div className="lg:col-span-2 bg-white rounded-xl shadow-lg p-8">
+                <h3 className="text-xl font-semibold mb-3">Built for Modern Machining</h3>
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  Our tools are manufactured using advanced CNC grinding technology, premium-grade carbide materials, and strict quality control processes to ensure
+                  consistent performance and long tool life. From standard tools to customized profiles, we provide reliable solutions for milling, drilling, and profiling applications.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  Driven by engineering excellence and continuous improvement, we serve industries such as automotive, aerospace, die & mold, engineering, and general manufacturing.
+                  Every tool we produce reflects our commitment to precision, efficiency, and customer satisfaction.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {industries.map((item) => (
+                    <span
+                      key={item}
+                      className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm text-gray-700"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
-            ))}
+
+              <div className="bg-white rounded-xl shadow-lg p-8">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <FaCheck className="text-primary text-xl" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Made in India. Built for the World.</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Proudly Made in India, we aim to contribute to global manufacturing by offering world-class solid carbide tools at competitive value.
+                </p>
+
+                <div className="mt-6 space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <FaCheck className="text-white text-xs" />
+                    </div>
+                    <p className="text-gray-700">High performance & accuracy</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <FaCheck className="text-white text-xs" />
+                    </div>
+                    <p className="text-gray-700">Premium carbide + CNC grinding</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                      <FaCheck className="text-white text-xs" />
+                    </div>
+                    <p className="text-gray-700">Standard & custom tool profiles</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Highlight Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {highlights.map((h, idx) => (
+                <div key={idx} className="bg-white rounded-xl shadow-lg p-8 flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <h.icon className="text-primary text-xl" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold mb-1">{h.title}</h4>
+                    <p className="text-gray-600">{h.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Process Steps */}
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
+                <h3 className="text-xl font-semibold">How We Deliver Consistent Quality</h3>
+                <span className="text-sm text-gray-500">Engineering • Manufacturing • Inspection • Support</span>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {processSteps.map((step, idx) => (
+                  <div key={idx} className="flex gap-4">
+                    <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 font-bold">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">{step.title}</h4>
+                      <p className="text-gray-600">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -102,7 +244,7 @@ export default function About() {
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Leadership Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
@@ -125,13 +267,13 @@ export default function About() {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Certifications</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
             {certifications.map((cert, index) => (
               <div key={index} className="text-center">
                 <img
                   src={cert.image}
                   alt={cert.name}
-                  className="w-24 h-24 mx-auto mb-4"
+                  className="w-48 mx-auto mb-4"
                 />
                 <h3 className="text-xl font-semibold mb-2">{cert.name}</h3>
                 <p className="text-gray-600">{cert.description}</p>

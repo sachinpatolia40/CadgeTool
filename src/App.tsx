@@ -27,12 +27,12 @@ function Home() {
                 At CadgeTools, we combine cutting-edge technology with decades of expertise to deliver precision-engineered endmills that set new industry standards. Our commitment to innovation and quality ensures optimal performance for your manufacturing needs.
               </p>
               <button className="text-primary hover:text-blue-700 font-semibold">
-                Discover Our Story
+                 <Link to={`${import.meta.env.BASE_URL}/about`} >Know more about us</Link>
               </button>
             </div>
             <div className="flex-1 grid grid-cols-2 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary">25+</div>
+                <div className="text-4xl font-bold text-primary">10+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center">

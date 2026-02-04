@@ -159,7 +159,7 @@ export default function Services() {
         <div className='flex justify-center mt-9'>
           <div className='bg-white shadow-lg rounded p-4 mb-6'>
             <h2 className='px-8 font-bold'>Complete Product Catelog</h2>
-            <p className=' mb-4'>PDF  15.2 MB </p>
+            <p className=' mb-4'>PDF  96.2 MB </p>
             <a className='inline-flex gap-2' href={`${import.meta.env.BASE_URL}/Catalog/Catalog.pdf`} download="CadgeTool Catalog " style={{'color':" rgb(111 158 229)"}}><FaDownload className='mt-1'/> <b>Download Now</b></a>
           </div>
         </div>

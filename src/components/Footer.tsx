@@ -1,4 +1,4 @@
-import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+// import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
 import {ContactInfos} from "../data/about"
 
 export default function Footer() {
@@ -22,8 +22,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-between items-center pt-8 border-t border-gray-800">
-          <p className="text-gray-400">© 2024 CadgeTools. All rights reserved.</p>
-          <div className="flex gap-4">
+          <p className="text-gray-400">© {new Date().getFullYear()} CadgeTools. All rights reserved.</p>
+          {/* <div className="flex gap-4">
             <a href="#" className="text-gray-400 hover:text-white">
               <FaLinkedin className="text-xl" />
             </a>
@@ -33,7 +33,7 @@ export default function Footer() {
             <a href="#" className="text-gray-400 hover:text-white">
               <FaFacebook className="text-xl" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
