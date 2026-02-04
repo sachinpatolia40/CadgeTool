@@ -9,8 +9,8 @@ export const cbn2BallNose: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/2flute-ballnose.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/2flute-ballnose-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/2flute-ballnose.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/2flute-ballnose-tech.png`,
   dimensions: [
     // ---------------- REGULAR ----------------
     { code: 'CBN2 030R', d1: '3',  d2h6: '3',  d3: '-', l1: '39',  l2: '10', l3: '-', radius: 'R1.5', flutes: 2, shankType: 'Cylindrical' },

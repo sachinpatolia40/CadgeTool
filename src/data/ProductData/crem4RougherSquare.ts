@@ -9,8 +9,8 @@ export const crem4RougherSquare: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/4flute-rougher.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/4flute-rougher-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/4flute-rougher.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/4flute-rougher-tech.png`,
   dimensions: [
     { code: 'CREM4 050R', d1: '5',  d2h6: '5',  d3: '-', l1: '51',  l2: '16', l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical' },
     { code: 'CREM4 060R', d1: '6',  d2h6: '6',  d3: '-', l1: '63',  l2: '19', l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical' },

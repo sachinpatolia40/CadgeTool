@@ -9,8 +9,8 @@ export const chm3Hallmill: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/hallmill.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/hallmill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/hallmill.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/hallmill-tech.png`,
   dimensions: [
     { code: 'CHM3 030R', d1: '3',  d2h6: '3',  d3: '-', l1: '57',  l2: '16', l3: '-', radius: '-', flutes: 3, shankType: 'Cylindrical' },
     { code: 'CHM3 040R', d1: '4',  d2h6: '4',  d3: '-', l1: '63',  l2: '25', l3: '-', radius: '-', flutes: 3, shankType: 'Cylindrical' },

@@ -9,8 +9,8 @@ export const cigtInternalGrooving: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/internal-grooving.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/internal-grooving-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/internal-grooving.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/internal-grooving-tech.png`,
   dimensions: [
     // E 4.8 – Shank 5
     { code: 'CIGT48 0001', d1: 'E 4.8', d2h6: '5', d3: '-', l1: '15', l2: '50', l3: '-', radius: '-', flutes: 1, shankType: 'Cylindrical', width: '1',   depth: '1.2' },

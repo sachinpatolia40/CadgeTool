@@ -9,8 +9,8 @@ export const cem3ThreeFlute: Product = {
     diameter: 0, // handled via dimensions table
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/3flute-regular.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/2flute-endmill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/3flute-regular.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/2flute-endmill-tech.png`,
   dimensions: [
     { code: 'CEM3 030R', d1: '3',  d2h6: '3',  d3: '-', l1: '39',  l2: '10', l3: '-', radius: '-', flutes: 3, shankType: 'Cylindrical' },
     { code: 'CEM3 040R', d1: '4',  d2h6: '4',  d3: '-', l1: '51',  l2: '14', l3: '-', radius: '-', flutes: 3, shankType: 'Cylindrical' },

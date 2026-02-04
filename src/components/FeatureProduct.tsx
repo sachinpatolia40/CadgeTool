@@ -5,22 +5,22 @@ const featureProductList = [
     {
         title: 'High-Speed Steel Endmills',
         description: 'Optimal performance for standard machining operations',
-        image: `${import.meta.env.BASE_URL}/high-speed-steel-endmills-thumbnail.png`
+        image: `${import.meta.env.BASE_URL}high-speed-steel-endmills-thumbnail.png`
     },
     {
         title: 'Carbide Endmills',
         description: 'Superior hardness and wear resistance',
-        image: `${import.meta.env.BASE_URL}/carbide-endmills-thumbnail.png`
+        image: `${import.meta.env.BASE_URL}carbide-endmills-thumbnail.png`
     },
     {
         title: 'Specialty Cutters',
         description: 'Custom solutions for unique applications',
-        image: `${import.meta.env.BASE_URL}/specialty-cutters-thumbnail.png`
+        image: `${import.meta.env.BASE_URL}specialty-cutters-thumbnail.png`
     },
     {
         title: 'Micro Tools',
         description: 'Precision tools for intricate operations',
-        image: `${import.meta.env.BASE_URL}/micro-tools-thumbnail.png`
+        image: `${import.meta.env.BASE_URL}micro-tools-thumbnail.png`
     }
 ]
 
@@ -38,7 +38,7 @@ export const FeatureProducts = (): JSX.Element => {
                                 <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
                                 <p className="text-gray-600 mb-4">{product.description}</p>
                                 <button className="text-primary hover:text-blue-700 font-semibold">
-                                     <Link to={`${import.meta.env.BASE_URL}/products`} >View Details →</Link>
+                                     <Link to={`${import.meta.env.BASE_URL}products`} >View Details →</Link>
                                 </button>
                             </div>
                         </div>

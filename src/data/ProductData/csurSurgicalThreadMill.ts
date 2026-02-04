@@ -9,8 +9,8 @@ export const csurSurgicalThreadMill: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/surgical-thread-mill.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/surgical-thread-mill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/surgical-thread-mill.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/surgical-thread-mill-tech.png`,
   dimensions: [
     {
       code: 'CSUR030 06S',

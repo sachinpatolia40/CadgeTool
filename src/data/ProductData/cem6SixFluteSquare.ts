@@ -9,8 +9,8 @@ export const cem6SixFluteSquare: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/6flute-square.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/6flute-square-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/6flute-square.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/6flute-square-tech.png`,
   dimensions: [
     { code: 'CEM6 060R', d1: '6',  d2h6: '6',  d3: '-', l1: '63',  l2: '19', l3: '-', radius: '-', flutes: 6, shankType: 'Cylindrical' },
     { code: 'CEM6 080R', d1: '8',  d2h6: '8',  d3: '-', l1: '63',  l2: '22', l3: '-', radius: '-', flutes: 6, shankType: 'Cylindrical' },

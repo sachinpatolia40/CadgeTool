@@ -9,8 +9,8 @@ export const cittInternalThreadingTool: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/internal-threading.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/internal-threading-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/internal-threading.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/internal-threading-tech.png`,
   dimensions: [
     // 55° series
     { code: 'CITT55 0001', d1: '2.9', d2h6: '3', d3: '-', l1: '15', l2: '39', l3: '-', radius: '-', flutes: 1, shankType: 'Cylindrical', pitch: '0.5–1.0', threadAngle: '55°' },

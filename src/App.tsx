@@ -27,7 +27,7 @@ function Home() {
                 At CadgeTools, we combine cutting-edge technology with decades of expertise to deliver precision-engineered endmills that set new industry standards. Our commitment to innovation and quality ensures optimal performance for your manufacturing needs.
               </p>
               <button className="text-primary hover:text-blue-700 font-semibold">
-                 <Link to={`${import.meta.env.BASE_URL}/about`} >Know more about us</Link>
+                 <Link to={`${import.meta.env.BASE_URL}about`} >Know more about us</Link>
               </button>
             </div>
             <div className="flex-1 grid grid-cols-2 gap-8">
@@ -61,7 +61,7 @@ function Home() {
           <h2 className="text-3xl font-bold mb-4">Ready to Elevate Your Manufacturing?</h2>
           <p className="text-gray-600 mb-8">Get in touch with our experts today</p>
           <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">
-            <Link to={`${import.meta.env.BASE_URL}/Contact`} >Request a Quote</Link>
+            <Link to={`${import.meta.env.BASE_URL}Contact`} >Request a Quote</Link>
           </button>
         </div>
       </section>
@@ -74,11 +74,11 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path={`${import.meta.env.BASE_URL}/`} element={<Home />} />
-        <Route path={`${import.meta.env.BASE_URL}/about`}  element={<About />} />
-        <Route path={`${import.meta.env.BASE_URL}/services`}  element={<Services />} />
-        <Route path={`${import.meta.env.BASE_URL}/contact`}  element={<Contact />} />
-        <Route path={`${import.meta.env.BASE_URL}/products`}  element={<Products />} />
+        <Route path={`${import.meta.env.BASE_URL}`} element={<Home />} />
+        <Route path={`${import.meta.env.BASE_URL}about`}  element={<About />} />
+        <Route path={`${import.meta.env.BASE_URL}services`}  element={<Services />} />
+        <Route path={`${import.meta.env.BASE_URL}contact`}  element={<Contact />} />
+        <Route path={`${import.meta.env.BASE_URL}products`}  element={<Products />} />
       </Routes>
       <Footer />
     </>

@@ -4,32 +4,32 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Vishal Patel',
     position: 'Administration & Finance',
-    image: `${import.meta.env.BASE_URL}/Staff/VishalPatel.png`,
+    image: `${import.meta.env.BASE_URL}Staff/VishalPatel.png`,
     description: 'Keeping operations smooth and finances on track.'
   },
   {
     name: 'Prakash Sagar',
     position: 'Sales & Marketing',
-    image: `${import.meta.env.BASE_URL}/Staff/PrakashSagar.png`,
+    image: `${import.meta.env.BASE_URL}Staff/PrakashSagar.png`,
     description: 'Driving growth through smart sales and strong branding.'
   },
   {
     name: 'Ajit Patel',
     position: 'Production & Development',
-    image: `${import.meta.env.BASE_URL}/Staff/AjitPatel.png`,
+    image: `${import.meta.env.BASE_URL}Staff/AjitPatel.png`,
     description: 'Turning ideas into precision products—efficiently and reliably.'
   },
   {
     name: 'Pratik Patel',
     position: 'Quality & Design',
-    image: `${import.meta.env.BASE_URL}/Staff/PratikPatel.png`,
+    image: `${import.meta.env.BASE_URL}Staff/PratikPatel.png`,
     description: 'Designing better tools and ensuring uncompromising quality.'
   }
   ,
   {
     name: 'Akash Patel',
     position: 'Production & Supply Chain',
-    image: `${import.meta.env.BASE_URL}/Staff/AkashPatel.png`,
+    image: `${import.meta.env.BASE_URL}Staff/AkashPatel.png`,
     description: 'Ensuring timely production and a seamless supply chain.'
   }
 ];
@@ -66,7 +66,7 @@ export const certifications: Certification[] = [
   {
     name: 'ISO 9001:2015',
     description: 'Quality Management System',
-    image: `${import.meta.env.BASE_URL}/ISO9001.jpeg`
+    image: `${import.meta.env.BASE_URL}ISO9001.jpeg`
   }
 ];
 

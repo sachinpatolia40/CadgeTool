@@ -9,8 +9,8 @@ export const cslp1SingleLipCutter: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/single-lip-cutter.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/single-lip-cutter-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/single-lip-cutter.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/single-lip-cutter-tech.png`,
   dimensions: [
     { code: 'CSLP1 030S', d1: '3',  d2h6: '6',  d3: '-', l1: '63',  l2: '6',  l3: '-', radius: '-', flutes: 1, shankType: 'Cylindrical' },
     { code: 'CSLP1 040S', d1: '4',  d2h6: '6',  d3: '-', l1: '63',  l2: '6',  l3: '-', radius: '-', flutes: 1, shankType: 'Cylindrical' },

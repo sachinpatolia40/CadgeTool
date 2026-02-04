@@ -9,8 +9,8 @@ export const ccr2CornerRadius: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/2flute-corner-radius.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/2flute-corner-radius-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/2flute-corner-radius.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/2flute-corner-radius-tech.png`,
   dimensions: [
     { code: 'CCR2 030R 0.5', d1: '3',  d2h6: '3',  d3: '-', l1: '39',  l2: '10', l3: '-', radius: '0.5', flutes: 2, shankType: 'Cylindrical' },
     { code: 'CCR2 030R 1',   d1: '3',  d2h6: '3',  d3: '-', l1: '39',  l2: '10', l3: '-', radius: '1',   flutes: 2, shankType: 'Cylindrical' },

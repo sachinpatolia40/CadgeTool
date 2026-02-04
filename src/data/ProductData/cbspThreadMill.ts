@@ -9,8 +9,8 @@ export const cbspThreadMill: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/bsp-thread-mill.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/bsp-thread-mill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/bsp-thread-mill.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/bsp-thread-mill-tech.png`,
   dimensions: [
     {
       code: 'CBSP06 28S',

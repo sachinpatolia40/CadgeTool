@@ -9,8 +9,8 @@ export const ccdCenterDrill: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/center-drill.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/center-drill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/center-drill.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/center-drill-tech.png`,
   dimensions: [
     { code: 'CCD 010R', d1: '1',    d2h6: '3.15', d3: '-', l1: '32', l2: '1.6', l3: '-', radius: '-', flutes: 2, shankType: 'Cylindrical' },
     { code: 'CCD 016R', d1: '1.6',  d2h6: '4',    d3: '-', l1: '35', l2: '2.4', l3: '-', radius: '-', flutes: 2, shankType: 'Cylindrical' },

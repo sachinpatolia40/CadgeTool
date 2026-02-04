@@ -9,8 +9,8 @@ export const cnptThreadMill: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/npt-thread-mill.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/npt-thread-mill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/npt-thread-mill.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/npt-thread-mill-tech.png`,
   dimensions: [
     {
       code: 'CNPT06 27S',

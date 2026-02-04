@@ -9,8 +9,8 @@ export const cdl3Drill3XD: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/drill-3xd.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/drill-3xd-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/drill-3xd.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/drill-3xd-tech.png`,
   dimensions: [
     { code: 'CDL3 0103R', d1: '1–3',     d2h6: '4',  d3: '-', l1: '50',  l2: '10', l3: '-', radius: '-', flutes: 2, shankType: 'Cylindrical' },
     { code: 'CDL3 0304R', d1: '3.1–4',   d2h6: '4',  d3: '-', l1: '50',  l2: '15', l3: '-', radius: '-', flutes: 2, shankType: 'Cylindrical' },

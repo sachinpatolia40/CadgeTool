@@ -9,8 +9,8 @@ export const cem4FourFlute: Product = {
       diameter: 0,          // can be ignored / used as default
       material: 'Carbide'
     },
-    image: `${import.meta.env.BASE_URL}/Products/Endmill/4flute-regular.png`, // hero image
-    techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/4flute-endmill-tech.png`,
+    image: `${import.meta.env.BASE_URL}Products/Endmill/4flute-regular.png`, // hero image
+    techSketch: `${import.meta.env.BASE_URL}Products/Sketches/4flute-endmill-tech.png`,
     dimensions: [
       // ------- REGULAR -------
       { code: 'CEM4 030R', variant: 'Regular', d1: '3', d2h6: '3', d3: '-', l1: '39', l2: '10', l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical' },

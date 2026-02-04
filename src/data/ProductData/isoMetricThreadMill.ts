@@ -9,8 +9,8 @@ export const isoMetricThreadMill: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/iso-metric-thread-mill.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/iso-metric-thread-mill-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/iso-metric-thread-mill.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/iso-metric-thread-mill-tech.png`,
   dimensions: [
     {
       code: 'CISO04 M03S',

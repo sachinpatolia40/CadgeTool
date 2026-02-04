@@ -9,8 +9,8 @@ export const cchf4ChamferCutter90: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/chamfer-cutter-90.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/chamfer-cutter-90-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/chamfer-cutter-90.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/chamfer-cutter-90-tech.png`,
   dimensions: [
     { code: 'CCHF4 030S', d1: '3',  d2h6: '3',  d3: '-', l1: '39',  l2: '-', l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical', threadAngle: '90°' },
     { code: 'CCHF4 040S', d1: '4',  d2h6: '4',  d3: '-', l1: '51',  l2: '-', l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical', threadAngle: '90°' },

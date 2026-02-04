@@ -9,8 +9,8 @@ export const cemp4PSquare: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/4flute-pseries.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/4flute-pseries-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/4flute-pseries.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/4flute-pseries-tech.png`,
   dimensions: [
     // ---------------- REGULAR ----------------
     { code: 'CEMP4 030R', d1: '3',  d2h6: '3',  d3: '-', l1: '39',  l2: '10', l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical' },

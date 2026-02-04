@@ -9,8 +9,8 @@ export const dmctCutter: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/dmct.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/dmct-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/dmct.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/dmct-tech.png`,
   dimensions: [
     { code: 'CRM4 030 S', d1: '3',  d2h6: '6',  d3: '-', l1: '51', l2: '6',  l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical' },
     { code: 'CRM4 040 S', d1: '4',  d2h6: '6',  d3: '-', l1: '51', l2: '8',  l3: '-', radius: '-', flutes: 4, shankType: 'Cylindrical' },

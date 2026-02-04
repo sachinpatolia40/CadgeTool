@@ -9,8 +9,8 @@ export const cdl5TCThroughCoolantDrill5XD: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/through-coolant-drill-5xd.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/through-coolant-drill-5xd-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/through-coolant-drill-5xd.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/through-coolant-drill-5xd-tech.png`,
   dimensions: [
     { code: 'CDL5 0103TC', d1: '1–3',     d2h6: '4',  d3: '-', l1: '50',  l2: '10',  l3: '-', radius: '-', flutes: 2, shankType: 'Cylindrical' },
     { code: 'CDL5 0304TC', d1: '3.1–4',   d2h6: '4',  d3: '-', l1: '50',  l2: '15',  l3: '-', radius: '-', flutes: 2, shankType: 'Cylindrical' },

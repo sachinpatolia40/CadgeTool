@@ -9,8 +9,8 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Section */}
         <div>
-          <Link to={`${import.meta.env.BASE_URL}/`} >
-            <img src={import.meta.env.BASE_URL + "/logo.png"} alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
+          <Link to={`${import.meta.env.BASE_URL}`} >
+            <img src={import.meta.env.BASE_URL + "logo.png"} alt="CadgeTools" className="h-10 cursor-pointer transition-transform transform hover:scale-110" />
           </Link>
         </div>
 
@@ -30,11 +30,11 @@ export default function Navigation() {
 
           {/* Navbar Links */}
           <div className={`w-full md:flex md:items-center md:space-x-6 ${show ? 'block' : 'hidden'} md:block`} id="navbar-default">
-            <Link to={`${import.meta.env.BASE_URL}/`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Home</Link>
-            <Link to={`${import.meta.env.BASE_URL}/about`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">About Us</Link>
-            <Link to={`${import.meta.env.BASE_URL}/products`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Products</Link>
-            <Link to={`${import.meta.env.BASE_URL}/services`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Services</Link>
-            <Link to={`${import.meta.env.BASE_URL}/contact`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Contact Us</Link>
+            <Link to={`${import.meta.env.BASE_URL}`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Home</Link>
+            <Link to={`${import.meta.env.BASE_URL}about`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">About Us</Link>
+            <Link to={`${import.meta.env.BASE_URL}products`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Products</Link>
+            <Link to={`${import.meta.env.BASE_URL}services`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Services</Link>
+            <Link to={`${import.meta.env.BASE_URL}contact`} className="text-white hover:text-yellow-300 font-semibold transition-colors duration-300 block md:flex">Contact Us</Link>
           </div>
         </div>
       </div>

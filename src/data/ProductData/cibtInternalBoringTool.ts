@@ -9,8 +9,8 @@ export const cibtInternalBoringTool: Product = {
     diameter: 0,
     material: 'Carbide'
   },
-  image: `${import.meta.env.BASE_URL}/Products/Endmill/internal-boring.png`,
-  techSketch: `${import.meta.env.BASE_URL}/Products/Sketches/internal-boring-tech.png`,
+  image: `${import.meta.env.BASE_URL}Products/Endmill/internal-boring.png`,
+  techSketch: `${import.meta.env.BASE_URL}Products/Sketches/internal-boring-tech.png`,
   dimensions: [
     { code: 'CIBT46 0122 S5', d1: '4.6', d2h6: '5',  d3: '-', l1: '22', l2: '50', l3: '-', radius: '0.1', flutes: 1, shankType: 'Cylindrical', depth: '1.2', xAngle: '22°', yAngle: '8°' },
     { code: 'CIBT46 0130 S5', d1: '4.6', d2h6: '5',  d3: '-', l1: '30', l2: '50', l3: '-', radius: '0.1', flutes: 1, shankType: 'Cylindrical', depth: '1.2', xAngle: '22°', yAngle: '8°' },
