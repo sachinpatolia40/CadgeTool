@@ -6,7 +6,7 @@ import { cbn2BallNose } from "../data/ProductData/cbn2BallNose"
 import { cbn4BallNose } from "../data/ProductData/cbn4BallNose"
 import { ccr2CornerRadius } from "../data/ProductData/ccr2CornerRadius"
 import { ccr4CornerRadius } from "../data/ProductData/ccr4CornerRadius"
-import { cemp4PSquare } from "../data/ProductData/cemp4PSquare"
+// import { cemp4PSquare } from "../data/ProductData/cemp4PSquare"
 import { crem4RougherSquare } from "../data/ProductData/crem4RougherSquare"
 import { cem6SixFluteSquare } from "../data/ProductData/cem6SixFluteSquare"
 import { cslp1SingleLipCutter } from "../data/ProductData/cslp1SingleLipCutter"
@@ -33,7 +33,7 @@ export const products: Product[] = [
   cbn4BallNose,
   ccr2CornerRadius,
   ccr4CornerRadius,
-  cemp4PSquare,
+  // cemp4PSquare,
   crem4RougherSquare,
   cem6SixFluteSquare,
   cslp1SingleLipCutter,

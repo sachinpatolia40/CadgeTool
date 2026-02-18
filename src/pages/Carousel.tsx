@@ -9,7 +9,7 @@ const Carousel = () => {
 
   const content = [
     {
-      title: 'Precision Engineered Endmills for Superior Performance',
+      title: 'Precision Engineered Tools for Superior Performance',
       description: 'Advancing Manufacturing Through Innovation',
       buttonText: 'Explore our product',
     },

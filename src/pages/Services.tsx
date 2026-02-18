@@ -71,14 +71,15 @@ export default function Services() {
   ];
 
   const specifications = [
-    'Diameter range: 0.1mm - 25mm',
-    'Length-to-diameter ratio: Up to 30:1',
+    'Diameter range: 0.1mm - 32mm',
+    'Flute Lenght Range - upto 180 mm',
+    'Overall Lenght - 280 mm',
     'Surface roughness: Ra 0.1 μm',
     'Geometric tolerance: ±0.002mm',
     'Cutting edge radius: 0.003mm - 0.015mm',
     'Multiple flute configurations',
     'Various helix angles available',
-    'Custom relief angles'
+    'Custom relief angles',
   ];
 
   return (

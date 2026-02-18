@@ -5,32 +5,32 @@ export const teamMembers: TeamMember[] = [
     name: 'Vishal Patel',
     position: 'Administration & Finance',
     image: `${import.meta.env.BASE_URL}Staff/VishalPatel.png`,
-    description: 'Keeping operations smooth and finances on track.'
+    description: 'Vishal Patel leads the Administration & Finance function, ensuring strong financial governance, efficient administrative systems, and compliance to support sustainable growth.He Manages international sales and export operations, ensuring global compliance, timely deliveries, and strong overseas customer relationships'
   },
   {
     name: 'Prakash Sagar',
     position: 'Sales & Marketing',
     image: `${import.meta.env.BASE_URL}Staff/PrakashSagar.png`,
-    description: 'Driving growth through smart sales and strong branding.'
+    description: 'Prakash Sagar heads Sales & Marketing, focusing on customer engagement, market expansion, and revenue growth. With a customer-first approach, he strengthens the company’s market presence and drives sustainable sales growth'
   },
   {
     name: 'Ajit Patel',
     position: 'Production & Development',
     image: `${import.meta.env.BASE_URL}Staff/AjitPatel.png`,
-    description: 'Turning ideas into precision products—efficiently and reliably.'
+    description: 'Ajit Patel leads Production & Development, overseeing advanced manufacturing processes and continuous product innovation to deliver consistent quality and performance'
   },
   {
     name: 'Pratik Patel',
     position: 'Quality & Design',
     image: `${import.meta.env.BASE_URL}Staff/PratikPatel.png`,
-    description: 'Designing better tools and ensuring uncompromising quality.'
+    description: 'Pratik Patel engaged to Ensures precision, quality compliance, and innovative design to deliver reliable and high-performance products.'
   }
   ,
   {
     name: 'Akash Patel',
     position: 'Production & Supply Chain',
     image: `${import.meta.env.BASE_URL}Staff/AkashPatel.png`,
-    description: 'Ensuring timely production and a seamless supply chain.'
+    description: 'Akash Patel Manages production planning and supply chain operations, ensuring timely delivery, cost efficiency, and smooth material flow.'
   }
 ];
 

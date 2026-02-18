@@ -250,7 +250,7 @@ export default function About() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full md:h-64 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{member.name}</h3>

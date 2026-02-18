@@ -24,7 +24,7 @@ function Home() {
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-4">Crafting Excellence in Every Cut</h2>
               <p className="text-gray-600 mb-6">
-                At CadgeTools, we combine cutting-edge technology with decades of expertise to deliver precision-engineered endmills that set new industry standards. Our commitment to innovation and quality ensures optimal performance for your manufacturing needs.
+                At Cadge (Carbide+Edge), we combide cutting - edge technology with decades of expertise to deliver Precision - engineered Solid Carbide Cutting Tools that set new industry standards. Our commitment to innovation and quality ensures optimal performance for your manufacturing needs.
               </p>
               <button className="text-primary hover:text-blue-700 font-semibold">
                  <Link to={`${import.meta.env.BASE_URL}about`} >Know more about us</Link>

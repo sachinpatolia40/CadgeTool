@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4">CadgeTools</h3>
             <p className="text-gray-400">
-              Leading manufacturer of precision endmills and cutting tools for industrial applications.
+              Leading manufacturer of Solid Carbide Cutting Tools for industrial applications.
               <br></br>
               Precision Engineered for Peak Performance.
             </p>
