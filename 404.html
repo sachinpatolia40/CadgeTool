@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const path = window.location.pathname;
+      const repo = "/CadgeTools"; // 🔁 change this to your repo name
+
+      window.location.replace(
+        repo + "/#" + path.replace(repo, "")
+      );
+    </script>
+  </head>
+</html>
