@@ -17,5 +17,5 @@ const pages = [
   stream.end();
 
   const data = await streamToPromise(stream);
-  writeFileSync('./cls/sitemap.xml', data.toString());
+  writeFileSync('./public/sitemap.xml', data.toString());
 })();
