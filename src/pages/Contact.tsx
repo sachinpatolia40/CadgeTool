@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa';
-import {ContactInfos} from "../data/about"
+import { ContactInfos } from "../data/about"
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,8 +12,8 @@ export default function Contact() {
     subject: '',
     message: ''
   });
-  const whatsAppLink:string ="https://wa.me/"+ContactInfos.phone1;
-  const mapUrl :string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6979.924879343274!2d72.6693184935791!3d23.037290699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87000251ec93%3A0xcdb694964e62cab8!2sVaibhav%20Industrial%20Estate!5e1!3m2!1sen!2sin!4v1767722490358!5m2!1sen!2sin";
+  const whatsAppLink: string = "https://wa.me/" + ContactInfos.phone1;
+  const mapUrl: string = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6979.924879343274!2d72.6693184935791!3d23.037290699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87000251ec93%3A0xcdb694964e62cab8!2sVaibhav%20Industrial%20Estate!5e1!3m2!1sen!2sin!4v1767722490358!5m2!1sen!2sin";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,181 +29,193 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <div className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-gray-600">We're here to help with your endmill manufacturing needs</p>
+    <><Helmet>
+      <title>Contact CadgeTools - Get in Touch for CNC Cutting Tools</title>
+      <meta name="description" content="Contact CadgeTools for high-quality end mills, drills, and custom CNC cutting tools. Located in Ahmedabad, India." />
+      <meta name="keywords" content="contact CadgeTools, cutting tool supplier India, CNC tools Ahmedabad, carbide tools contact" />
+      <link rel="canonical" href="https://www.cadgetools.com/contact" />
+      <meta property="og:title" content="Contact CadgeTools - CNC Cutting Tool Manufacturer" />
+      <meta property="og:description" content="Get in touch with CadgeTools for high-quality end mills, drills, and custom CNC tooling solutions in India." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.cadgetools.com/contact" />
+      <meta property="og:image" content="https://www.cadgetools.com/og/contact.png" />
+    </Helmet>
+      <div className="min-h-screen pt-16">
+        {/* Hero Section */}
+        <div className="bg-gray-100 py-12">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+            <p className="text-gray-600">We're here to help with your endmill manufacturing needs</p>
+          </div>
         </div>
-      </div>
 
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Full Name *</label>
-                <input
-                  type="text"
-                  id="fullName"
-                  name="fullName"
-                  required
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  className="input-style"
-                />
-              </div>
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">Full Name *</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    className="input-style"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="companyName" className="block text-sm font-medium text-gray-700">Company Name</label>
-                <input
-                  type="text"
-                  id="companyName"
-                  name="companyName"
-                  value={formData.companyName}
-                  onChange={handleChange}
-                  className="input-style"
-                />
-              </div>
+                <div>
+                  <label htmlFor="companyName" className="block text-sm font-medium text-gray-700">Company Name</label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    value={formData.companyName}
+                    onChange={handleChange}
+                    className="input-style"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="input-style"
-                />
-              </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="input-style"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="input-style"
-                />
-              </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="input-style"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700">Subject</label>
-                <select
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="input-style"
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700">Subject</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="input-style"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="quote">Request Quote</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="input-style"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-md hover:bg-blue-700 transition"
                 >
-                  <option value="">Select a subject</option>
-                  <option value="quote">Request Quote</option>
-                  <option value="support">Technical Support</option>
-                  <option value="sales">Sales Inquiry</option>
-                  <option value="other">Other</option>
-                </select>
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <FaMapMarkerAlt className="text-primary text-xl" />
+                  <h3 className="font-semibold">Address</h3>
+                </div>
+                <p className="text-gray-600">
+                  {ContactInfos.address}
+                </p>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="input-style"
-                ></textarea>
+                <div className="flex items-center gap-3 mb-2">
+                  <FaPhone className="text-primary text-xl" />
+                  <h3 className="font-semibold">Phone</h3>
+                </div>
+                <p className="text-gray-600">
+                  +91 {ContactInfos.phone1}, +91 {ContactInfos.phone2}
+                </p>
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-primary text-white px-6 py-3 rounded-md hover:bg-blue-700 transition"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <div className="flex items-center gap-3 mb-2">
-                <FaMapMarkerAlt className="text-primary text-xl" />
-                <h3 className="font-semibold">Address</h3>
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <FaEnvelope className="text-primary text-xl" />
+                  <h3 className="font-semibold">Email</h3>
+                </div>
+                <p className="text-gray-600">
+                  {ContactInfos.email}
+                </p>
               </div>
-              <p className="text-gray-600">
-                {ContactInfos.address }
-              </p>
-            </div>
 
-            <div>
-              <div className="flex items-center gap-3 mb-2">
-                <FaPhone className="text-primary text-xl" />
-                <h3 className="font-semibold">Phone</h3>
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <FaClock className="text-primary text-xl" />
+                  <h3 className="font-semibold">Business Hours</h3>
+                </div>
+                <p className="text-gray-600">
+                  Monday - Saturday: 8:00 AM - 8:00 PM<br />
+                  Sunday: Closed
+                </p>
               </div>
-              <p className="text-gray-600">
-               +91 {ContactInfos.phone1}, +91 {ContactInfos.phone2}
-              </p>
-            </div>
 
-            <div>
-              <div className="flex items-center gap-3 mb-2">
-                <FaEnvelope className="text-primary text-xl" />
-                <h3 className="font-semibold">Email</h3>
+              <div className="bg-green-500 text-white p-6 rounded-lg">
+                <div className="flex items-center gap-3 mb-4">
+                  <FaWhatsapp className="text-2xl" />
+                  <h3 className="font-semibold">Chat with us on WhatsApp</h3>
+                </div>
+                <p className="mb-4">Get instant support through WhatsApp</p>
+                <a
+                  href={whatsAppLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white text-green-500 px-6 py-2 rounded-full hover:bg-gray-100 transition"
+                >
+                  Start Chat →
+                </a>
               </div>
-              <p className="text-gray-600">
-                {ContactInfos.email}
-              </p>
-            </div>
-
-            <div>
-              <div className="flex items-center gap-3 mb-2">
-                <FaClock className="text-primary text-xl" />
-                <h3 className="font-semibold">Business Hours</h3>
-              </div>
-              <p className="text-gray-600">
-                Monday - Saturday: 8:00 AM - 8:00 PM<br />
-                Sunday: Closed
-              </p>
-            </div>
-
-            <div className="bg-green-500 text-white p-6 rounded-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <FaWhatsapp className="text-2xl" />
-                <h3 className="font-semibold">Chat with us on WhatsApp</h3>
-              </div>
-              <p className="mb-4">Get instant support through WhatsApp</p>
-              <a
-                href={whatsAppLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-green-500 px-6 py-2 rounded-full hover:bg-gray-100 transition"
-              >
-                Start Chat →
-              </a>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Map Section */}
-      <div className="h-96 w-full bg-gray-200 relative">
-        <iframe
-          src={mapUrl}
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-        ></iframe>
+        {/* Map Section */}
+        <div className="h-96 w-full bg-gray-200 relative">
+          <iframe
+            src={mapUrl}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

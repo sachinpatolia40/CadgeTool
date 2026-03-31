@@ -1,5 +1,5 @@
 // import { FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
-import {ContactInfos} from "../data/about"
+import { ContactInfos } from "../data/about"
 
 export default function Footer() {
   return (
@@ -8,11 +8,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">Why choose CadgeTools?</h3>
-            <p className="text-gray-400">
-              Leading manufacturer of Solid Carbide Cutting Tools for industrial applications.
-              <br></br>
-              Precision Engineered for Peak Performance.
-            </p>
+            <ul className="text-gray-400">
+              <li>
+                <p className="text-gray-400">
+                  Leading manufacturer of Solid Carbide Cutting Tools for industrial applications.
+                  <br></br>
+                  Precision Engineered for Peak Performance.
+                </p>
+              </li>
+              <li>ISO 9001:2015 certified manufacturing</li>
+              <li>High precision and durability</li>
+              <li>Custom tool design capabilities</li>
+              <li>Advanced CNC tool production</li>
+            </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>

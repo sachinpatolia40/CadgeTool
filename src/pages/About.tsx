@@ -1,5 +1,7 @@
 import { FaCheck, FaIndustry, FaUsers, FaGlobe, FaCogs, FaBullseye, FaTools, FaShieldAlt } from 'react-icons/fa';
 import { teamMembers, certifications } from '../data/about';
+import { Helmet } from "react-helmet-async";
+
 
 export default function About() {
   const stats = [
@@ -73,8 +75,20 @@ export default function About() {
     }
   ];
 
-  return (
+  return (<>
+    <Helmet>
+      <title>About CadgeTools - Precision Cutting Tool Manufacturer in India</title>
+      <meta name="description" content="Learn about CadgeTools, a trusted manufacturer of high-quality end mills and drills. We specialize in precision CNC cutting tools for industrial machining applications." />
+      <meta name="keywords" content="about CadgeTools, cutting tool company India, CNC tool manufacturer, carbide tools company" />
+      <link rel="canonical" href="https://www.cadgetools.com/about" />
+      <meta property="og:title" content="About CadgeTools - CNC Cutting Tool Experts" />
+      <meta property="og:description" content="Discover CadgeTools, a trusted manufacturer of precision cutting tools, delivering high-performance end mills and drills." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.cadgetools.com/about" />
+      <meta property="og:image" content="https://www.cadgetools.com/og/about.png" />
+    </Helmet>
     <div className="min-h-screen pt-16">
+
       {/* Hero Section */}
       <div className="relative h-96 bg-gray-900">
         <div className="absolute inset-0">
@@ -298,5 +312,6 @@ export default function About() {
         </div>
       </div>
     </div>
+  </>
   );
 }
