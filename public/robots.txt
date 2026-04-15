@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cadgetools.com/sitemap.xml
+Sitemap: https://www.cadgetools.com/sitemap.xml
