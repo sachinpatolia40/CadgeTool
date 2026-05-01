@@ -5,7 +5,7 @@ export default function Navigation() {
   const [show, setShow] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-white to-gray-400 w-full z-10 shadow-lg">
+    <nav aria-label="Main navigation" className="bg-gradient-to-r from-white to-gray-400 w-full z-10 shadow-lg">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Section */}
         <div>

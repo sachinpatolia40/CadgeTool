@@ -86,15 +86,23 @@ export default function Services() {
 
   return (
     <><Helmet>
-      <title>Custom Tooling & CNC Solutions | CadgeTools</title>
-      <meta name="description" content="We provide custom tooling solutions, regrinding services, and precision CNC tool design tailored for industrial machining needs." />
-      <meta name="keywords" content="custom tooling India, CNC tool design, tool regrinding services, carbide tool solutions" />
+      <title>CNC Cutting Tool Services - Custom Tooling & Regrinding | CadgeTools India</title>
+      <meta name="description" content="CadgeTools offers custom end mill manufacturing, tool reconditioning, engineering consultation, PVD coating, and quality testing services for CNC machining in India." />
+      <meta name="keywords" content="custom tooling India, CNC tool design, tool regrinding services, carbide tool solutions, end mill reconditioning, PVD coating India, cutting tool engineering" />
       <link rel="canonical" href="https://www.cadgetools.com/services" />
-      <meta property="og:title" content="Custom Tooling & CNC Solutions | CadgeTools" />
-      <meta property="og:description" content="Get custom tooling solutions, regrinding services, and precision CNC cutting tool design tailored to your needs." />
+      <meta property="og:title" content="Custom CNC Tooling & Reconditioning Services | CadgeTools" />
+      <meta property="og:description" content="Custom end mill manufacturing, tool reconditioning, PVD coating, and engineering consultation for precision CNC machining in India." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://www.cadgetools.com/services" />
       <meta property="og:image" content="https://www.cadgetools.com/og/services.png" />
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cadgetools.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.cadgetools.com/services" }
+        ]
+      })}</script>
     </Helmet>
       <div className="min-h-screen">
         {/* Hero Section */}
@@ -102,7 +110,7 @@ export default function Services() {
           <div className="absolute inset-0">
             <img
               src={import.meta.env.BASE_URL + "Service.png"}
-              alt="Manufacturing"
+              alt="CadgeTools Manufacturing Facility"
               className="w-full h-full object-cover opacity-40"
             />
           </div>
@@ -172,7 +180,7 @@ export default function Services() {
           <p className='text-gray-400'>Get detailed information about our products and specifications</p>
           <div className='flex justify-center mt-9'>
             <div className='bg-white shadow-lg rounded p-4 mb-6'>
-              <h2 className='px-8 font-bold'>Complete Product Catelog</h2>
+              <h2 className='px-8 font-bold'>Complete Product Catalog</h2>
               <p className=' mb-4'>PDF  96.2 MB </p>
               <a className='inline-flex gap-2' href={`${import.meta.env.BASE_URL}Catalog/Catalog.pdf`} download="CadgeTool Catalog " style={{ 'color': " rgb(111 158 229)" }}><FaDownload className='mt-1' /> <b>Download Now</b></a>
             </div>

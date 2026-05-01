@@ -32,16 +32,23 @@ export default function Products() {
   return (
     <>
       <Helmet>
-        <title>Our Products - End Mills & Drills | CadgeTools India</title>
-        <meta name="description" content="Explore our range of solid carbide end mills, drills, and precision cutting tools designed for CNC machining and industrial use." />
-        <meta name="keywords" content="carbide end mills, industrial drills, CNC tools India, milling tools, drilling tools" />
+        <title>Solid Carbide End Mills & Drills - CNC Cutting Tools | CadgeTools India</title>
+        <meta name="description" content="Explore CadgeTools' range of solid carbide end mills, drills, thread mills, and precision cutting tools for CNC machining. 25+ products including 2-flute, 4-flute, ball nose, corner radius, and through-coolant drills." />
+        <meta name="keywords" content="carbide end mills India, solid carbide drills, CNC milling tools, ball nose end mill, corner radius end mill, thread mills, through coolant drills, carbide cutting tools manufacturer" />
         <link rel="canonical" href="https://www.cadgetools.com/products" />
-
-        <meta property="og:title" content="Explore End Mills & Drills - CadgeTools Products" />
-        <meta property="og:description" content="Browse our premium range of solid carbide end mills and drills designed for precision CNC machining." />
+        <meta property="og:title" content="Solid Carbide End Mills & Drills - CadgeTools Product Catalog" />
+        <meta property="og:description" content="Browse 25+ premium solid carbide end mills, drills, and thread mills designed for precision CNC machining in India." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.cadgetools.com/products" />
         <meta property="og:image" content="https://www.cadgetools.com/og/products.png" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cadgetools.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.cadgetools.com/products" }
+          ]
+        })}</script>
       </Helmet>
       <div className="min-h-screen pt-16 bg-gray-100">
         {/* Hero Section */}

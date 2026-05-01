@@ -24,13 +24,15 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-gray-400"><a href={"https://share.google/6dV4vEjrlbEUNZhLA"}>{ContactInfos.address}</a></p>
-            <p className="text-gray-400">{ContactInfos.email}</p>
-            <p className="text-gray-400">+91 {ContactInfos.phone1}</p>
+            <address className="not-italic">
+              <p className="text-gray-400"><a href={"https://share.google/6dV4vEjrlbEUNZhLA"} aria-label="View CadgeTools location on Google Maps">{ContactInfos.address}</a></p>
+              <p className="text-gray-400"><a href={`mailto:${ContactInfos.email.trim()}`}>{ContactInfos.email}</a></p>
+              <p className="text-gray-400"><a href={`tel:+91${ContactInfos.phone1}`}>+91 {ContactInfos.phone1}</a></p>
+            </address>
           </div>
         </div>
         <div className="flex justify-between items-center pt-8 border-t border-gray-800">
-          <p className="text-gray-400">© 2025 CadgeTools. All rights reserved.</p>
+          <p className="text-gray-400">© 2025–2026 CadgeTools. All rights reserved.</p>
           {/* <div className="flex gap-4">
             <a href="#" className="text-gray-400 hover:text-white">
               <FaLinkedin className="text-xl" />

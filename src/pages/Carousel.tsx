@@ -7,6 +7,12 @@ const Carousel = () => {
     `${import.meta.env.BASE_URL}carousel1.jpg`,
   ];
 
+  const alts = [
+    'CadgeTools solid carbide end mills for precision CNC machining',
+    'CadgeTools precision cutting tools manufacturing in India',
+    'CadgeTools carbide drills and end mills for industrial applications',
+  ];
+
   const content = [
     {
       title: 'Precision Engineered Tools for Superior Performance',
@@ -48,7 +54,7 @@ const Carousel = () => {
             <div key={index} className="w-full flex-shrink-0 relative">
               <img
                 src={img}
-                alt={`carousel-${index}`}
+                alt={alts[index]}
                 className="w-full h-[60vh] md:h-[70vh] object-cover" // Adjust height for different screens
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div> {/* Dark overlay */}

@@ -30,15 +30,23 @@ export default function Contact() {
 
   return (
     <><Helmet>
-      <title>Contact CadgeTools - Get in Touch for CNC Cutting Tools</title>
-      <meta name="description" content="Contact CadgeTools for high-quality end mills, drills, and custom CNC cutting tools. Located in Ahmedabad, India." />
-      <meta name="keywords" content="contact CadgeTools, cutting tool supplier India, CNC tools Ahmedabad, carbide tools contact" />
+      <title>Contact CadgeTools - Carbide End Mill & Drill Manufacturer in Ahmedabad</title>
+      <meta name="description" content="Contact CadgeTools for high-quality solid carbide end mills, drills, and custom CNC cutting tools. Located at Vaibhav Industrial Estate, Ahmedabad, Gujarat. Call +91-9898506560." />
+      <meta name="keywords" content="contact CadgeTools, cutting tool supplier India, CNC tools Ahmedabad, carbide tools Gujarat, end mill supplier contact, cutting tool manufacturer phone" />
       <link rel="canonical" href="https://www.cadgetools.com/contact" />
-      <meta property="og:title" content="Contact CadgeTools - CNC Cutting Tool Manufacturer" />
-      <meta property="og:description" content="Get in touch with CadgeTools for high-quality end mills, drills, and custom CNC tooling solutions in India." />
+      <meta property="og:title" content="Contact CadgeTools - CNC Cutting Tool Manufacturer in Ahmedabad" />
+      <meta property="og:description" content="Get in touch with CadgeTools for high-quality solid carbide end mills, drills, and custom CNC tooling solutions in Ahmedabad, India." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://www.cadgetools.com/contact" />
-      <meta property="og:image" content="https://www.cadgetools.com/og/contact.png" />
+      <meta property="og:image" content="https://www.cadgetools.com/og/contact (2).png" />
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cadgetools.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.cadgetools.com/contact" }
+        ]
+      })}</script>
     </Helmet>
       <div className="min-h-screen pt-16">
         {/* Hero Section */}
