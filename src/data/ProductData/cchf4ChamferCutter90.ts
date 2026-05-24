@@ -29,5 +29,13 @@ export const cchf4ChamferCutter90: Product = {
     { label: 'Angle', value: '90°' },
     { label: 'Application', value: 'Chamfering, deburring, countersinking edges' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Chamfer Cutter 90°",
+    subtitle: "Deburring & Edge Finishing Tool",
+    description:
+      "Sharp carbide chamfer cutter designed for precise 90-degree chamfering and deburring in metal components.",
+    applications:
+      "Edge finishing and preparation before assembly.",
+  }
 };

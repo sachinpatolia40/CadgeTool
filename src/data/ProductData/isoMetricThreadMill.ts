@@ -178,5 +178,13 @@ export const isoMetricThreadMill: Product = {
     { label: 'Thread Angle', value: '60°' },
     { label: 'Application', value: 'Internal threading, helical interpolation' },
     { label: 'Notes', value: 'Pitch values are in mm (table column labeled TPI)' }
-  ]
+  ],
+  ProductSEO: {
+    title: "ISO Metric Thread Mill",
+    subtitle: "Universal Thread Milling Tool",
+    description:
+      "Versatile thread milling tool for ISO metric threads providing superior thread quality and eliminating tap breakage risk.",
+    applications:
+      "Thread production in steel, aluminum, and stainless steel components.",
+  }
 };

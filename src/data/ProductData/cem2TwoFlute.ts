@@ -57,5 +57,13 @@ export const cem2TwoFlute: Product = {
     { label: 'Feed per Tooth (Fz)', value: '0.03–0.08 mm/tooth' },
     { label: 'Max Depth of Cut', value: '1×D (Slotting), 2×D (Side Cutting)' },
     { label: 'Series Included', value: 'Regular, Long, Extra Long' }
-  ]
+  ],
+  ProductSEO:{
+    title: "2 Flute End Mill",
+    subtitle: "Precision Solid Carbide Milling Tool",
+    description:
+      "High-performance 2 flute solid carbide end mill designed for efficient chip evacuation and superior surface finish in aluminum, brass, and non-ferrous materials. Engineered for CNC machining applications requiring high-speed cutting and stability.",
+    applications:
+      "Ideal for slotting, profiling, and high-speed machining in automotive, aerospace, and precision engineering industries.",
+  }
 };

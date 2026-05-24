@@ -63,5 +63,13 @@ export const ccr4CornerRadius: Product = {
     { label: 'Best For', value: 'Corner finishing, profiling in steel & cast iron' },
     { label: 'Tool Type', value: '4 Flute Corner Radius (Regular)' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO:{
+    title: "4 Flute Corner Radius End Mill",
+    subtitle: "Heavy-Duty Steel Machining Tool",
+    description:
+      "Designed for steel and cast iron machining with reinforced corner geometry for improved durability and reduced wear during aggressive cutting.",
+    applications:
+      "Side milling, ramping, and production machining.",
+  }
 };

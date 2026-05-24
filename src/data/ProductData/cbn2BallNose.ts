@@ -56,5 +56,13 @@ export const cbn2BallNose: Product = {
     { label: 'Ball Nose Radius', value: 'R = D / 2' },
     { label: 'Application', value: 'Finishing, profiling, free-form surfaces' },
     { label: 'Series Included', value: 'Regular, Long, Extra Long' }
-  ]
+  ],
+  ProductSEO:{
+    title: "2 Flute Ball Nose End Mill",
+    subtitle: "3D Profiling & Contouring Tool",
+    description:
+      "Precision ball nose end mill designed for smooth 3D contouring, mold making, and finishing operations. Wide flute design ensures excellent chip evacuation in soft materials.",
+    applications:
+      "Die & mold machining, surface finishing, and complex geometry profiling.",
+  }
 };

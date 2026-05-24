@@ -27,5 +27,13 @@ export const dmctCutter: Product = {
     { label: 'Tool Type', value: 'DMCT Cutter' },
     { label: 'Series', value: 'CRM4 / CRM6' },
     { label: 'Application', value: 'General milling / profiling (as per catalog series)' }
-  ]
+  ],
+  ProductSEO: {
+    title: "DMCT Tool",
+    subtitle: "High Precision Special Cutting Tool",
+    description:
+      "Specialized high precision cutting tool designed for tight tolerance machining in automotive and aerospace components.",
+    applications:
+      "High accuracy CNC machining applications.",
+  }
 };

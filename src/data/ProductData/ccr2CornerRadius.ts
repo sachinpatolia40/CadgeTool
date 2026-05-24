@@ -63,5 +63,13 @@ export const ccr2CornerRadius: Product = {
     { label: 'Best For', value: 'Corner finishing, filleting, profiling' },
     { label: 'Tool Type', value: '2 Flute Corner Radius (Regular)' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO:{
+    title: "2 Flute Corner Radius End Mill",
+    subtitle: "Edge Strength & Tool Life Improvement",
+    description:
+      "Corner radius end mill designed to reduce edge chipping and improve tool life in aluminum and non-ferrous machining applications.",
+    applications:
+      "High-speed milling, slotting, and finishing operations.",
+  }
 };

@@ -38,5 +38,13 @@ export const cibtInternalBoringTool: Product = {
     { label: 'Cutting Edge', value: 'Single point' },
     { label: 'Approach Angles', value: 'X = 22°, Y = 8°' },
     { label: 'Application', value: 'Internal boring and profiling' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Internal Boring Tool",
+    subtitle: "Precision Bore Finishing Tool",
+    description:
+      "Single point boring tool designed for high accuracy bore finishing with excellent concentricity and surface finish.",
+    applications:
+      "Automotive, aerospace, and hydraulic bore machining.",
+  }
 };

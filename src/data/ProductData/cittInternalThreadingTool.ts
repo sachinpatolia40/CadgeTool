@@ -43,5 +43,13 @@ export const cittInternalThreadingTool: Product = {
     { label: 'Thread Angles Available', value: '55° and 60°' },
     { label: 'Application', value: 'Internal threading for fine and standard pitches' },
     { label: 'Cutting Edge', value: 'Single point' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Internal Threading Tool",
+    subtitle: "Internal CNC Thread Milling Tool",
+    description:
+      "High precision tool for internal thread milling eliminating tap breakage and improving thread quality and consistency.",
+    applications:
+      "Internal threading in CNC machined components.",
+  }
 };

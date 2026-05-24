@@ -31,8 +31,13 @@ export default function Footer() {
             </address>
           </div>
         </div>
-        <div className="flex justify-between items-center pt-8 border-t border-gray-800">
-          <p className="text-gray-400">© 2025–2026 CadgeTools. All rights reserved.</p>
+        <div className=" text-gray-600 leading-8 border-t mt-10">
+          <p>
+            Businesses looking for reliable carbide cutting tools near you trust
+            CadgeTools for high-quality manufacturing, precision tooling,
+            and custom CNC solutions.
+            © 2025–2026 CadgeTools. All rights reserved.
+          </p>
           {/* <div className="flex gap-4">
             <a href="#" className="text-gray-400 hover:text-white">
               <FaLinkedin className="text-xl" />

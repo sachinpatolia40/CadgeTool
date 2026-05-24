@@ -27,5 +27,13 @@ export const ccdCenterDrill: Product = {
     { label: 'Application', value: 'Spotting and centering before drilling' },
     { label: 'Point Style', value: 'Combined drill & countersink' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Center Drill",
+    subtitle: "Accurate Hole Positioning Tool",
+    description:
+      "Used for precise centering and spotting operations before drilling to ensure accurate hole alignment and machining stability.",
+    applications:
+      "Pre-drilling operations in all CNC machining processes.",
+  }
 };

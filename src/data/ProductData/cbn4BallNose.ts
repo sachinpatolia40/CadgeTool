@@ -56,5 +56,13 @@ export const cbn4BallNose: Product = {
     { label: 'Ball Nose Radius', value: 'R = D / 2' },
     { label: 'Application', value: 'Finishing, contouring, die & mould' },
     { label: 'Series Included', value: 'Regular, Long, Extra Long' }
-  ]
+  ],
+  ProductSEO:{
+    title: "4 Flute Ball Nose End Mill",
+    subtitle: "Hardened Steel Finishing Tool",
+    description:
+      "High rigidity ball nose end mill designed for semi-finishing and finishing hardened steels and alloys. Provides excellent surface quality and dimensional accuracy.",
+    applications:
+      "Mold & die industries, hardened steel finishing, and precision CNC work.",
+  }
 };

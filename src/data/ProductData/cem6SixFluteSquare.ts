@@ -24,5 +24,13 @@ export const cem6SixFluteSquare: Product = {
     { label: 'Flute Count', value: '6 flutes for better surface finish' },
     { label: 'Application', value: 'Profiling, finishing passes' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO:{
+    title: "6 Flute Square End Mill",
+    subtitle: "Finishing & High Precision Tool",
+    description:
+      "High flute count end mill designed for superior surface finish and dimensional accuracy in hardened steels and high-temperature alloys.",
+    applications:
+      "Finish machining and precision engineering applications.",
+  }
 };

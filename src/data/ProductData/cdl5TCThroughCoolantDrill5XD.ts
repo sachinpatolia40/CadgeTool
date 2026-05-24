@@ -34,5 +34,13 @@ export const cdl5TCThroughCoolantDrill5XD: Product = {
     { label: 'Drilling Depth', value: '5×D' },
     { label: 'Coolant', value: 'Through Coolant' },
     { label: 'Application', value: 'Deeper drilling with improved chip evacuation' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Through Coolant Drill 5×D",
+    subtitle: "Deep Hole Cooling Drill",
+    description:
+      "Advanced coolant-through drill for deep hole applications requiring stable cutting, heat reduction, and extended tool life.",
+    applications:
+      "Deep drilling in tough materials and high-volume production.",
+  }
 };

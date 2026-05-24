@@ -98,5 +98,13 @@ export const csurSurgicalThreadMill: Product = {
     { label: 'Application', value: 'Medical and surgical implant threading' },
     { label: 'Thread Angle', value: '55° / 60° (as specified)' },
     { label: 'Notes', value: 'Designed for fine-pitch precision threads' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Surgical Thread Mill",
+    subtitle: "Medical Grade Precision Threading",
+    description:
+      "High precision thread mill designed for medical and surgical components requiring tight tolerances and superior surface finish.",
+    applications:
+      "Medical device manufacturing and precision engineering.",
+  }
 };

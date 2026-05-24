@@ -33,5 +33,13 @@ export const cdl3Drill3XD: Product = {
     { label: 'Drilling Depth', value: '3×D' },
     { label: 'Application', value: 'General purpose drilling' },
     { label: 'Coolant', value: 'External' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Drill 3×D",
+    subtitle: "Standard Depth Solid Carbide Drill",
+    description:
+      "Stable and precise solid carbide drill designed for standard depth hole making in steel, stainless steel, and cast iron with excellent positional accuracy.",
+    applications:
+      "General drilling operations in CNC machining centers.",
+  }
 };

@@ -33,5 +33,13 @@ export const cdl5Drill5XD: Product = {
     { label: 'Drilling Depth', value: '5×D' },
     { label: 'Application', value: 'Deeper hole drilling' },
     { label: 'Coolant', value: 'External' }
-  ]
+  ],
+  ProductSEO:{
+    title: "Drill 5×D",
+    subtitle: "Deep Hole Drilling Solution",
+    description:
+      "Extended reach carbide drill designed for deep hole drilling with improved chip evacuation and rigidity for stable performance.",
+    applications:
+      "Deep drilling in automotive, aerospace, and industrial components.",
+  }
 };

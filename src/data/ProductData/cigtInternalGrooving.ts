@@ -51,5 +51,13 @@ export const cigtInternalGrooving: Product = {
     { label: 'Tool Type', value: 'Internal Grooving Tool' },
     { label: 'Application', value: 'Internal groove machining' },
     { label: 'Cutting Edge', value: 'Single edge' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Internal Grooving Tool",
+    subtitle: "Precision Internal Groove Cutting",
+    description:
+      "Designed for accurate internal groove machining in bores, cylinders, and hydraulic components with controlled depth and width.",
+    applications:
+      "Hydraulic components and sealing groove machining.",
+  }
 };

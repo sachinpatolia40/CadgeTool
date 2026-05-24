@@ -32,5 +32,13 @@ export const chm3Hallmill: Product = {
     { label: 'Application', value: 'High feed milling and profiling' },
     { label: 'Material', value: 'Steel and alloy steel' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Hallmill",
+    subtitle: "Precision Contour Milling Tool",
+    description:
+      "Specialized milling tool designed for radial profiling, contour finishing, and precision machining in hardened materials.",
+    applications:
+      "Die & mold industry and precision engineering components.",
+  }
 };

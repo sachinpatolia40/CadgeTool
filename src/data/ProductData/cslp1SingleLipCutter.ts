@@ -38,5 +38,13 @@ export const cslp1SingleLipCutter: Product = {
     { label: 'Chip Evacuation', value: 'Excellent (single flute design)' },
     { label: 'Application', value: 'Slotting, engraving, deep pocketing' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO:{
+    title: "Single Lip Cutter",
+    subtitle: "Engraving & Micro Machining Tool",
+    description:
+      "Precision single lip cutter designed for engraving, marking, and micro-slot machining with high accuracy and fine surface finish.",
+    applications:
+      "Engraving, PCB work, and precision micro machining.",
+  }
 };

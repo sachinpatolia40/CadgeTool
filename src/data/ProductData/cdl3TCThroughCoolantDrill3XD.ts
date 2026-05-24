@@ -33,5 +33,13 @@ export const cdl3TCThroughCoolantDrill3XD: Product = {
     { label: 'Drilling Depth', value: '3×D' },
     { label: 'Coolant', value: 'Through Coolant' },
     { label: 'Application', value: 'Stable drilling, better chip evacuation' }
-  ]
+  ],
+  ProductSEO: {
+    title: "Through Coolant Drill 3×D",
+    subtitle: "High Efficiency Cooling Drill",
+    description:
+      "Internal coolant drill designed for improved chip removal and heat control during high-speed drilling operations.",
+    applications:
+      "Continuous production drilling and high-performance machining.",
+  }
 };

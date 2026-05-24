@@ -27,5 +27,13 @@ export const crem4RougherSquare: Product = {
     { label: 'Best For', value: 'High material removal (roughing)' },
     { label: 'Application', value: 'Slotting and heavy side milling' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO:{
+    title: "4 Flute Rougher End Mill",
+    subtitle: "High Metal Removal Roughing Tool",
+    description:
+      "Serrated roughing end mill designed for maximum material removal rate while reducing cutting forces and heat generation during heavy machining.",
+    applications:
+      "Rough milling, stock removal, and high-speed production machining.",
+  }
 };

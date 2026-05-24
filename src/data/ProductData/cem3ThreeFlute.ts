@@ -29,5 +29,13 @@ export const cem3ThreeFlute: Product = {
     { label: 'Flute Design', value: '3 flutes for balance of chip evacuation and strength' },
     { label: 'Application', value: 'Slotting, side milling, profiling' },
     { label: 'Series Included', value: 'Regular' }
-  ]
+  ],
+  ProductSEO:{
+    title: "3 Flute Square End Mill",
+    subtitle: "Balanced Chip Evacuation & Stability",
+    description:
+      "3 flute square end mill offering an optimal balance between chip removal and cutting strength. Suitable for both ferrous and non-ferrous materials with consistent cutting performance.",
+    applications:
+      "General purpose milling, contouring, and precision machining applications.",
+  }
 };

@@ -114,5 +114,13 @@ export const cbspThreadMill: Product = {
     { label: 'Thread Angle', value: '55°' },
     { label: 'Standard', value: 'BSP (British Standard Pipe)' },
     { label: 'Note', value: 'Pitch values are listed as TPI (threads per inch)' }
-  ]
+  ],
+  ProductSEO: {
+    title: "BSP Thread Mill",
+    subtitle: "Pipe Thread Milling Tool",
+    description:
+      "Designed for British Standard Pipe threads used in hydraulic and pneumatic systems ensuring accurate and leak-free connections.",
+    applications:
+      "Fluid power, plumbing, and industrial piping systems.",
+  }
 };

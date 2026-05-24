@@ -55,5 +55,13 @@ export const cem4FourFlute: Product = {
       { label: 'Best For', value: 'Steel, alloy steel, cast iron' },
       { label: 'Applications', value: 'Side milling, profiling, finishing cuts' },
       { label: 'Series Included', value: 'Regular, Long, Extra Long' }
-    ]
+    ],
+    ProductSEO:{
+    title: "4 Flute End Mill",
+    subtitle: "General Purpose Steel Cutting Tool",
+    description:
+      "Versatile 4 flute solid carbide end mill designed for machining steel, stainless steel, and cast iron with excellent surface finish and tool life. Optimized flute geometry ensures stable cutting and reduced vibration.",
+    applications:
+      "Used in slot milling, side milling, and finishing operations in industrial CNC environments.",
+  }
 };

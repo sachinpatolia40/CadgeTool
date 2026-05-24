@@ -130,5 +130,13 @@ export const cnptThreadMill: Product = {
     { label: 'Thread Standard', value: 'NPT (National Pipe Thread)' },
     { label: 'Thread Angle', value: '60°' },
     { label: 'Application', value: 'Tapered pipe thread milling' }
-  ]
+  ],
+  ProductSEO: {
+    title: "NPT Thread Mill",
+    subtitle: "Taper Pipe Thread Tool",
+    description:
+      "Precision tool for machining NPT tapered threads used in oil, gas, and fluid handling applications.",
+    applications:
+      "Oil & gas, hydraulics, and industrial piping systems.",
+  }
 };

@@ -10,9 +10,17 @@ export interface Product {
   image: string;
   techSketch: string,
   dimensions: Dimension[];
-  technicalParameter: TechnicalParameter[]
+  technicalParameter: TechnicalParameter[],
+  ProductSEO: ProductSEO
 }
 
+export interface ProductSEO {
+  title: string;
+  subtitle: string;
+
+  description: string;
+  applications: string;
+}
 export interface TechnicalParameter {
   label: string;
   value: string;
