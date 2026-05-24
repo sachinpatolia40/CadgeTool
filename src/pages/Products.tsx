@@ -4,7 +4,6 @@ import { products } from '../data/products';
 import Modal from '../components/Modal';
 import { Product } from '../types/product';
 import { Helmet } from "react-helmet-async";
-import { seoProductData } from '../data/SEOProductData'
 
 export default function Products() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -12,11 +11,7 @@ export default function Products() {
   const [filterProducts, setFilterProducts] = useState(products);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [showAllSeo, setShowAllSeo] = useState(false);
 
-  const visibleSeoData = showAllSeo
-    ? seoProductData
-    : seoProductData.slice(0, 6);
   useEffect(() => {
     setFilterProducts(
       products.filter(value =>
@@ -276,79 +271,6 @@ export default function Products() {
             ))}
           </div>
         </div>
-
-        {/* ================= SEO SECTION ================= */}
-
-        <section className="bg-gradient-to-b from-slate-50 to-white py-24">
-
-          <div className="container mx-auto px-4">
-
-            {/* HEADER */}
-
-            <div className="text-center max-w-4xl mx-auto mb-16">
-
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-5">
-                COMPLETE PRODUCT CATALOG
-              </div>
-
-              <h2 className="text-4xl md:text-6xl font-black text-slate-900 leading-tight mb-6">
-                Industrial CNC Cutting Tools <br />
-                Built for Performance
-              </h2>
-
-              <p className="text-slate-600 text-xl leading-relaxed">
-                Explore our complete range of solid carbide end mills, drills, thread mills, and specialty CNC tooling solutions designed for high-precision industrial machining applications.
-              </p>
-
-            </div>
-
-            {/* GRID */}
-
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-
-              {visibleSeoData.map((item, index) => (
-
-                <article
-                  key={index}
-                  className="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-100 transition-all duration-300 hover:-translate-y-2"
-                >
-
-                  <h3 className="text-xl font-bold text-slate-900 leading-snug mb-3 group-hover:text-blue-700 transition-colors duration-300">
-                    {item.title}
-                  </h3>
-
-                  <h4 className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-5">
-                    {item.subtitle}
-                  </h4>
-
-                  <p className="text-sm text-slate-600 leading-7 mb-5">
-                    {item.description}
-                  </p>
-
-                  <p className="text-sm text-slate-600 leading-7">
-                    {item.applications}
-                  </p>
-
-                </article>
-              ))}
-            </div>
-
-            {/* BUTTON */}
-
-            <div className="flex justify-center mt-12">
-
-              <button
-                onClick={() => setShowAllSeo(!showAllSeo)}
-                className="px-8 py-4 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-all duration-300 shadow-lg"
-              >
-                {showAllSeo ? 'Show Less' : 'Show More Products'}
-              </button>
-
-            </div>
-
-          </div>
-        </section>
-
 
         {/* ================= MODAL ================= */}
 
